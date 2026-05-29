@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import sys
+
 from dental_packet_mcp.core import (
     build_dental_case_packet,
     check_phi_risk,
@@ -28,6 +30,24 @@ def create_server():
 
 
 def main() -> None:
+    if any(arg in {"-h", "--help"} for arg in sys.argv[1:]):
+        print(
+            "Dental Case Packet MCP\n\n"
+            "Usage:\n"
+            "  dental-packet-mcp\n"
+            "  python -m dental_packet_mcp\n\n"
+            "Runs a local-first MCP server over stdio.\n\n"
+            "Tools:\n"
+            "  build_dental_case_packet\n"
+            "  validate_case_packet\n"
+            "  summarize_packet\n"
+            "  list_supported_formats\n"
+            "  check_phi_risk\n\n"
+            "Safety:\n"
+            "  No diagnosis. No treatment recommendations. No patient data upload."
+        )
+        return
+
     create_server().run()
 
 

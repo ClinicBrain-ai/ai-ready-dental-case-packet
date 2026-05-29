@@ -1,0 +1,51 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.clinicbrain-ai/dental-case-packet-mcp",
+  "title": "Dental Case Packet MCP",
+  "description": "Local-first Dental Context Layer for AI Agents.",
+  "websiteUrl": "https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet",
+  "repository": {
+    "url": "https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet",
+    "source": "github"
+  },
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "dental-packet",
+      "version": "0.1.2",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "command": "dental-packet-mcp",
+      "alternativeCommand": "python -m dental_packet_mcp",
+      "capabilities": [
+        "build dental case packets",
+        "validate packets",
+        "summarize packets",
+        "check PHI risk",
+        "list supported formats"
+      ],
+      "tools": [
+        "build_dental_case_packet",
+        "validate_case_packet",
+        "summarize_packet",
+        "list_supported_formats",
+        "check_phi_risk"
+      ],
+      "safety": [
+        "local-first execution",
+        "no diagnosis",
+        "no treatment recommendations",
+        "no clinical interpretation",
+        "no patient data upload"
+      ]
+    }
+  }
+}

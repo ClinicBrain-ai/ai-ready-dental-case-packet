@@ -8,17 +8,17 @@ Scores are 1-10, where 10 means ready for broad public adoption.
 
 | Area | Score | Assessment |
 | --- | ---: | --- |
-| Discoverability | 8 | Strong README positioning, agent docs, keywords, and topic recommendations are now present. |
-| Installability | 7 | Local editable install works. PyPI metadata is prepared, but the package has not been published yet. |
-| MCP readiness | 7 | Local MCP server and client config docs exist. Registry submission still needs a validated `server.json` and PyPI release. |
-| Package readiness | 7 | `pyproject.toml` has package metadata, keywords, classifiers, URLs, and scripts. Build/twine workflow is documented but not yet executed for publication. |
-| Security readiness | 8 | Agent-specific security guidance covers prompt injection, PHI leakage, tool chaining, and external API exfiltration. |
+| Discoverability | 8.5 | README positioning, agent docs, keywords, topic recommendations, and registry listing copy are present. |
+| Installability | 8.5 | Local editable install works, wheel build works, and clean wheel install smoke tests pass. Public PyPI publishing is still pending. |
+| MCP readiness | 8 | Local MCP server, client config docs, registry listing, and schema-valid `registry/server.json` exist. Registry publication is still pending. |
+| Package readiness | 8.5 | `pyproject.toml` has package metadata, keywords, classifiers, URLs, scripts, and package artifacts pass `twine check`. |
+| Security readiness | 8.5 | Agent-specific security guidance covers prompt injection, PHI leakage, tool chaining, and external API exfiltration. MCP listing safety notes are documented. |
 | Documentation readiness | 9 | Agent, MCP, PyPI, registry, security, quick install, roadmap, and validation docs are present. |
 
 Overall readiness:
 
 ```text
-7.7 / 10
+8.4 / 10
 ```
 
 ## Discoverability
@@ -30,6 +30,7 @@ Strengths:
 - GitHub topic recommendations are documented.
 - PyPI keywords are configured.
 - MCP listing copy is drafted.
+- GitHub topics setup steps are documented.
 
 Blockers:
 
@@ -44,6 +45,9 @@ Strengths:
 - Editable install works with `pip install -e ".[dev,mcp]"`.
 - Console scripts are defined as `dental-packet` and `dental-packet-mcp`.
 - Quick agent install docs cover Claude Desktop, Cursor, Codex, and generic MCP clients.
+- Built wheel installs successfully in a clean virtual environment.
+- `dental-packet --help` and `dental-packet-mcp --help` pass from the installed wheel.
+- Sample build and validate commands pass from the installed wheel.
 
 Blockers:
 
@@ -59,12 +63,14 @@ Strengths:
 - MCP client configs are documented.
 - Registry listing copy is drafted.
 - Safety boundaries are explicit.
+- `registry/server.json` exists.
+- `registry/server.json` validates against the official `2025-12-11` schema.
 
 Blockers:
 
-- Need a validated `server.json`.
 - Need PyPI package publication before registry submission.
 - Need MCP Registry authentication and publish workflow.
+- Confirm how current registry clients launch a PyPI package when the package name is `dental-packet` and the MCP console script is `dental-packet-mcp`.
 
 ## Package Readiness
 
@@ -73,6 +79,9 @@ Strengths:
 - `pyproject.toml` has metadata, classifiers, keywords, URLs, and scripts.
 - Package name is aligned to `dental-packet`.
 - MCP command is aligned to `dental-packet-mcp`.
+- `python -m build` succeeds.
+- `python -m twine check dist/*` succeeds.
+- Clean wheel install succeeds.
 
 Blockers:
 
@@ -104,14 +113,14 @@ Strengths:
 
 Blockers:
 
-- Add a validated `server.json` once package publication is complete.
+- Keep `registry/server.json` aligned with the latest MCP Registry schema.
 - Add screenshots or marketplace listing assets if future registries request them.
 
 ## Adoption Blockers
 
 1. Publish `dental-packet` to TestPyPI and PyPI.
 2. Validate package installation from PyPI.
-3. Create and validate `server.json`.
-4. Submit to the MCP Registry with `mcp-publisher`.
-5. Apply GitHub topics in repository settings.
+3. Submit to the MCP Registry with `mcp-publisher`.
+4. Apply GitHub topics in repository settings.
+5. Confirm registry client launch behavior for PyPI packages with a distinct MCP console script.
 6. Add package provenance/signing if required by future marketplaces.

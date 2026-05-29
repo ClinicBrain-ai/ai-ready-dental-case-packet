@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import sys
 
 from dental_packet_mcp.core import (
     build_dental_case_packet,
@@ -9,6 +10,7 @@ from dental_packet_mcp.core import (
     summarize_packet,
     validate_case_packet,
 )
+from dental_packet_mcp.server import main
 
 
 def test_mcp_build_validate_and_summarize(tmp_path) -> None:
@@ -44,6 +46,17 @@ def test_mcp_supported_formats() -> None:
     assert ".dcm" in formats["CBCT/DICOM"]
     assert ".stl" in formats["intraoral scan STL/PLY/OBJ"]
     assert ".txt" in formats["text notes TXT"]
+
+
+def test_mcp_help_does_not_start_server(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(sys, "argv", ["dental-packet-mcp", "--help"])
+
+    main()
+
+    output = capsys.readouterr().out
+    assert "Dental Case Packet MCP" in output
+    assert "build_dental_case_packet" in output
+    assert "No diagnosis" in output
 
 
 def test_mcp_phi_risk_flags_paths_not_values(tmp_path) -> None:

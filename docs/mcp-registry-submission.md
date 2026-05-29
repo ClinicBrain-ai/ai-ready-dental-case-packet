@@ -169,7 +169,23 @@ dental-packet-mcp
 
 ## Draft `server.json`
 
-This draft should be validated against the current MCP Registry schema before submission.
+The repository now includes a draft at `registry/server.json`.
+
+The official examples support standard fields such as:
+
+- `$schema`
+- `name`
+- `title`
+- `description`
+- `websiteUrl`
+- `repository`
+- `version`
+- `packages`
+- `transport`
+- `runtimeHint`
+- `_meta.io.modelcontextprotocol.registry/publisher-provided`
+
+The current public examples do not define universal top-level fields for command names, tool definitions, or safety notes. Those details are documented in this file, `registry/mcp-listing.md`, and the publisher `_meta` section.
 
 ```json
 {
@@ -177,6 +193,7 @@ This draft should be validated against the current MCP Registry schema before su
   "name": "io.github.clinicbrain-ai/dental-case-packet-mcp",
   "title": "Dental Case Packet MCP",
   "description": "Local-first Dental Context Layer for AI Agents.",
+  "websiteUrl": "https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet",
   "repository": {
     "url": "https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet",
     "source": "github"
@@ -185,22 +202,54 @@ This draft should be validated against the current MCP Registry schema before su
   "packages": [
     {
       "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
       "identifier": "dental-packet",
       "version": "0.1.2",
+      "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
       }
     }
-  ]
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "command": "dental-packet-mcp",
+      "alternativeCommand": "python -m dental_packet_mcp",
+      "capabilities": [
+        "build dental case packets",
+        "validate packets",
+        "summarize packets",
+        "check PHI risk",
+        "list supported formats"
+      ],
+      "tools": [
+        "build_dental_case_packet",
+        "validate_case_packet",
+        "summarize_packet",
+        "list_supported_formats",
+        "check_phi_risk"
+      ],
+      "safety": [
+        "local-first execution",
+        "no diagnosis",
+        "no treatment recommendations",
+        "no clinical interpretation",
+        "no patient data upload"
+      ]
+    }
+  }
 }
 ```
+
+Note: because the PyPI package is named `dental-packet` while the MCP console script is `dental-packet-mcp`, registry clients may need explicit command support or publisher metadata awareness to launch the MCP script. If a future MCP Registry schema adds first-class command selection for PyPI packages, update `registry/server.json` accordingly.
 
 ## Submission Checklist
 
 - [ ] Publish `dental-packet` to PyPI.
-- [ ] Confirm the PyPI README includes `mcp-name: io.github.clinicbrain-ai/dental-case-packet-mcp`.
+- [x] Confirm the README includes `mcp-name: io.github.clinicbrain-ai/dental-case-packet-mcp`.
 - [ ] Install `mcp-publisher`.
-- [ ] Generate or validate `server.json`.
+- [x] Create `registry/server.json`.
+- [ ] Validate `registry/server.json` with the current registry schema or `mcp-publisher`.
 - [ ] Authenticate with the MCP Registry.
 - [ ] Publish with `mcp-publisher publish`.
 - [ ] Verify the listing through the MCP Registry API.
