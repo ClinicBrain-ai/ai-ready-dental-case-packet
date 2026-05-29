@@ -1,0 +1,94 @@
+{
+  "case_id": "case-imaging-rich-v0-1",
+  "created_at": "2026-05-29T00:00:00Z",
+  "patient": {
+    "age": 45,
+    "sex": "F",
+    "deidentified": true
+  },
+  "chief_complaint": "Patient reports discomfort around the upper right posterior area.",
+  "clinical_notes_summary": "De-identified clinical notes are available for review.",
+  "treatment_plan_summary": "Clinician-authored treatment plan text is available for organization only.",
+  "imaging": {
+    "cbct": {
+      "available": true,
+      "series_count": 1,
+      "dicom_metadata_summary": {
+        "Modality": {
+          "values": ["CT"],
+          "count": 128
+        },
+        "Rows": {
+          "values": ["512"],
+          "count": 128
+        },
+        "Columns": {
+          "values": ["512"],
+          "count": 128
+        }
+      },
+      "warnings": [
+        "PHI DICOM field detected and omitted in cbct/series-001/image-0001.dcm: PatientName"
+      ]
+    },
+    "xray": {
+      "available": true,
+      "files": [
+        {
+          "path": "xray/panoramic.png",
+          "format": "png"
+        }
+      ]
+    },
+    "intraoral_scan": {
+      "available": true,
+      "files": [
+        {
+          "path": "intraoral_scan/upper_arch.stl",
+          "format": "stl",
+          "size_bytes": 1842882,
+          "sha256": "7a2f000000000000000000000000000000000000000000000000000000000000",
+          "mesh_metadata": {
+            "vertices": 120000,
+            "faces": 240000,
+            "is_empty": false
+          }
+        }
+      ],
+      "formats": ["stl"]
+    },
+    "photos": {
+      "available": true,
+      "files": [
+        {
+          "path": "photos/retracted_view.jpg",
+          "format": "jpg"
+        }
+      ]
+    }
+  },
+  "ai_ready_context": {
+    "case_overview": "De-identified dental records are available, including narrative records, CBCT metadata, an X-ray image reference, an intraoral scan reference, and a clinical photo reference.",
+    "known_information": [
+      "chief_complaint",
+      "clinical_notes",
+      "treatment_plan",
+      "cbct",
+      "xray",
+      "intraoral_scan",
+      "photos"
+    ],
+    "missing_information": [],
+    "clinical_review_questions": [
+      "Please confirm that the de-identified packet accurately reflects the available records.",
+      "Please identify whether any omitted source records should be added before AI workflow use."
+    ],
+    "llm_prompt_context": "You are reviewing a de-identified dental case packet. Do not diagnose. Do not provide treatment recommendations. Summarize the available information, identify missing records, and generate questions for dentist review. All output is for clinical review only."
+  },
+  "safety": {
+    "not_for_diagnosis": true,
+    "requires_dentist_review": true,
+    "phi_removed": true
+  }
+}
+
