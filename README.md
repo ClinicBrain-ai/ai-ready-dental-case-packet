@@ -1,8 +1,10 @@
 # ai-ready-dental-case-packet
 
-Build a de-identified Dental Case Packet from local dental records.
+Building the AI-native data layer for dentistry — transforming CBCT, X-rays, intraoral scans, clinical notes, and treatment plans into structured, privacy-first Dental Case Packets for clinical review and AI workflows.
 
-This repository contains:
+`ai-ready-dental-case-packet` is a developer preview of an open specification and local reference CLI for organizing dental records into a portable, de-identified context package.
+
+## What This Project Is
 
 - A v0.1 Dental Case Packet specification.
 - A local Python CLI that builds and validates packets.
@@ -11,7 +13,22 @@ This repository contains:
 
 The CLI reads files like clinical notes, treatment plans, DICOM folders, images, and scan files. It writes structured JSON, Markdown, file manifests, logs, and de-identified text copies.
 
-It does **not** diagnose, recommend treatment, or claim clinical accuracy. Every output is for dentist review only.
+## What This Project Is Not
+
+- It is not a dental chatbot.
+- It is not an AI diagnostic model.
+- It does not diagnose.
+- It does not recommend treatment.
+- It does not claim clinical accuracy.
+
+Every output is for dentist review and clinical review workflows only.
+
+## Who It Is For
+
+- Dental teams preparing records for structured review.
+- Developers building AI workflow infrastructure for dentistry.
+- AI product teams that need privacy-first dental context packets.
+- Researchers exploring open dental data interoperability patterns without diagnostic claims.
 
 ## 30-Second Quickstart
 
@@ -45,7 +62,38 @@ case_packet_output/deidentified/
 case_packet_output/logs/
 ```
 
-## What This Is
+## Supported Inputs
+
+- CBCT DICOM: `cbct/*.dcm`
+- Dental X-ray DICOM or image files: `xray/*.dcm`, `xray/*.jpg`, `xray/*.png`
+- Intraoral scans: `intraoral_scan/*.stl`, `intraoral_scan/*.ply`, `intraoral_scan/*.obj`
+- Dental photos: `photos/*.jpg`, `photos/*.png`
+- Patient demographic input: `patient_info.json`
+- Narrative records: `chief_complaint.txt`, `clinical_notes.txt`, `treatment_plan.txt`
+
+## Outputs
+
+- `case_packet.json`: structured Dental Case Packet.
+- `case_packet.md`: human-readable report for review.
+- `manifest.json`: source file manifest with SHA-256 hashes.
+- `files_index.json`: compact file index.
+- `deidentified/`: de-identified copies of supported text and JSON inputs.
+- `logs/`: pipeline warnings, including PHI field detections without raw PHI values.
+
+## Safety Boundaries
+
+- No diagnosis.
+- No treatment recommendations.
+- No clinical accuracy claims.
+- PHI-safe metadata handling by default.
+- Large imaging and scan files are referenced, not embedded in `case_packet.json`.
+- AI-facing context is marked for clinical review only.
+
+## Non-Diagnostic Disclaimer
+
+This project only transforms dental records into structured context. It is not a medical device, diagnostic system, or treatment planning engine. Generated packets must be reviewed by qualified dental professionals before any clinical use.
+
+## Specification First
 
 This repository should be read like an infrastructure specification project:
 

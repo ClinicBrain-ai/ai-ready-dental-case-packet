@@ -1,30 +1,27 @@
 # Changelog
 
-All notable changes to this project are documented here.
+## v0.1.0 — AI-ready Dental Case Packet Developer Preview
 
-This project follows semantic versioning for the reference implementation and explicit versioning
-for the Dental Case Packet specification.
-
-## v0.1.0 - 2026-05-29
-
-Initial developer release.
+Initial public developer preview for the Dental Case Packet specification and reference CLI.
 
 ### Added
 
-- Local CLI for building a Dental Case Packet from `examples/sample_input/`.
-- CLI validation command for generated `case_packet.json` files.
-- Sample input and sample output for a runnable first developer workflow.
-- De-identified output copies for supported text and JSON input files.
+- CLI build command: `python -m dental_packet build --input ./examples/sample_input --output ./case_packet_output`.
+- CLI validate command: `python -m dental_packet validate --input ./case_packet_output/case_packet.json`.
+- Dental Case Packet JSON output: `case_packet.json`.
+- Markdown report output: `case_packet.md`.
 - File manifest and file index with SHA-256 hashes.
-- Markdown case packet report.
-- DICOM metadata extraction with PHI field detection logs.
-- Intraoral scan file indexing and best-effort mesh metadata parsing.
-- Pydantic schema models and validation tests.
+- DICOM metadata extraction for non-sensitive fields.
+- PHI-safe metadata handling that logs PHI field presence without exporting raw PHI values.
+- Intraoral scan file indexing for STL, PLY, and OBJ files.
+- Runnable example input and generated example output.
+- Pytest coverage for CLI behavior, schema validation, de-identification, and manifests.
+- Ruff validation.
 - GitHub Actions CI for ruff, pytest, sample build, and sample validation.
 
 ### Safety
 
-- The reference implementation does not diagnose.
-- The reference implementation does not recommend treatment.
-- AI-facing context says outputs are for clinical review only.
-- PHI fields are not exported into `case_packet.json`.
+- No diagnosis features.
+- No treatment recommendation features.
+- No clinical accuracy claims.
+- Outputs are for dentist review and clinical review workflows only.
