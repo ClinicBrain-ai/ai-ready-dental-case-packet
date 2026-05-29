@@ -2,6 +2,8 @@
 
 Building the AI-native data layer for dentistry — transforming CBCT, X-rays, intraoral scans, clinical notes, and treatment plans into structured, privacy-first Dental Case Packets for clinical review and AI workflows.
 
+<!-- mcp-name: io.github.clinicbrain-ai/dental-case-packet-mcp -->
+
 `ai-ready-dental-case-packet` is a developer preview of an open specification and local reference CLI for organizing dental records into a portable, de-identified context package.
 
 ## What This Project Is
@@ -25,6 +27,29 @@ Agent entry points:
 - [docs/agent-use-cases.md](docs/agent-use-cases.md): safe workflows for building, validating, summarizing, and checking packets.
 - [docs/mcp-client-config.md](docs/mcp-client-config.md): example MCP client configurations.
 - [docs/security-for-agents.md](docs/security-for-agents.md): agent-specific security and PHI risk guidance.
+- [docs/quick-agent-install.md](docs/quick-agent-install.md): install and configure MCP for local agent clients.
+
+## Why AI Agents Need Dental Context
+
+AI agents work best when records are structured, referenced, validated, and bounded by clear safety rules. Dental records are often scattered across DICOM studies, X-ray images, intraoral scans, photos, notes, and treatment plans. This project gives agents a local context layer that can organize those files without turning them into diagnosis or treatment advice.
+
+## Why Dental Case Packets Exist
+
+Dental Case Packets provide a portable JSON and Markdown representation of available dental records, missing information, file references, hashes, summaries, and review questions. They are designed to make dental context easier to inspect, validate, index, and pass into dentist-review-only AI workflows.
+
+## Why MCP Matters
+
+MCP lets AI agents call local tools through a structured interface. Dental Case Packet MCP exposes build, validate, summarize, supported-format, and PHI-risk tools so agent workflows can use dental context safely while keeping patient data local.
+
+```text
+Dental Records
+↓
+Dental Case Packet
+↓
+MCP Layer
+↓
+AI Agents
+```
 
 ## What This Project Is Not
 

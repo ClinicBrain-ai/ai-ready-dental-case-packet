@@ -3,13 +3,40 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ai-ready-dental-case-packet"
-version = "0.1.0"
-description = "Build de-identified, LLM-ready dental case packets from local dental records."
+name = "dental-packet"
+version = "0.1.2"
+description = "Local-first Dental Context Layer for AI Agents and MCP workflows."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "ai-ready-dental-case-packet contributors" }]
+maintainers = [{ name = "ClinicBrain" }]
+keywords = [
+  "dental",
+  "cbct",
+  "dicom",
+  "mcp",
+  "model-context-protocol",
+  "agent-tools",
+  "ai-agents",
+  "healthcare-ai",
+  "dental-ai",
+  "llm",
+  "context-layer",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Healthcare Industry",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Utilities",
+]
 dependencies = [
   "pydantic>=2.7",
   "pydicom>=2.4",
@@ -30,6 +57,13 @@ mcp = [
 [project.scripts]
 dental-packet = "dental_packet.cli:app"
 dental-packet-mcp = "dental_packet_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet"
+Documentation = "https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet/tree/main/docs"
+Repository = "https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet"
+Issues = "https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet/issues"
+Changelog = "https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]
