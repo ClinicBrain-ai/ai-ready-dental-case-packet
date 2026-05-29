@@ -1,0 +1,8 @@
+{
+  "risk_level": "low",
+  "flagged_fields": [],
+  "recommendations": [
+    "No obvious PHI-like fields were detected in the packet.",
+    "Review generated packets before sharing outside approved clinical workflows."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "case_id": "cv-014",
+  "source_dataset": "PhysioNet multimodal dental dataset",
+  "source_url": "https://physionet.org/content/multimodal-dental-dataset/",
+  "modality": "periapical X-ray",
+  "validation_focus": "endodontics",
+  "privacy": "Public-source-referenced fixture; no private patient data included.",
+  "clinical_use": "Infrastructure validation only. No diagnosis or treatment advice."
+}

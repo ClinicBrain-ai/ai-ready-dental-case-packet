@@ -1,0 +1,42 @@
+[
+  {
+    "file_type": "text",
+    "path": "chief_complaint.txt",
+    "sha256": "bb28c33e38e3896eb1c0f4bd4c60fa923f42e0823febf95d4b0663403822486b",
+    "size_bytes": 91,
+    "extension": "txt",
+    "role": "chief_complaint"
+  },
+  {
+    "file_type": "text",
+    "path": "clinical_notes.txt",
+    "sha256": "13e8f311c4aaf1718efd0d313135fd891116baa1d4fc683efe1b1bc8a0595136",
+    "size_bytes": 456,
+    "extension": "txt",
+    "role": "clinical_notes"
+  },
+  {
+    "file_type": "json",
+    "path": "patient_info.json",
+    "sha256": "42ac2ac9ad850d784c50c199de99d5d03e566c81177e9a657114129fd529308c",
+    "size_bytes": 32,
+    "extension": "json",
+    "role": "patient_info"
+  },
+  {
+    "file_type": "json",
+    "path": "source_reference.json",
+    "sha256": "c7bc20849ba912e53dba91be8647da8d54cd2d1fa36f364831e7df9fa58d9339",
+    "size_bytes": 443,
+    "extension": "json",
+    "role": "other"
+  },
+  {
+    "file_type": "image",
+    "path": "xray/panoramic_fixture.png",
+    "sha256": "6763e82cdd719b4c72bc5d64fb20075b3f1babf8a1c2b6aff1860b9cc3084997",
+    "size_bytes": 74,
+    "extension": "png",
+    "role": "xray"
+  }
+]

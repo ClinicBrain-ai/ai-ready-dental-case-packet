@@ -90,3 +90,45 @@ def test_mcp_phi_risk_flags_paths_not_values(tmp_path) -> None:
     assert result["risk_level"] == "medium"
     assert "$.chief_complaint (email-like text)" in result["flagged_fields"]
     assert "patient@example.com" not in json.dumps(result)
+
+
+def test_mcp_phi_risk_ignores_packet_created_at(tmp_path) -> None:
+    packet_path = tmp_path / "case_packet.json"
+    packet_path.write_text(
+        json.dumps(
+            {
+                "case_id": "case-test",
+                "created_at": "2026-05-29T00:00:00Z",
+                "patient": {"age": None, "sex": None, "deidentified": True},
+                "chief_complaint": "",
+                "clinical_notes_summary": "",
+                "treatment_plan_summary": "",
+                "imaging": {
+                    "cbct": {
+                        "available": False,
+                        "series_count": 0,
+                        "dicom_metadata_summary": {},
+                        "warnings": [],
+                    },
+                    "xray": {"available": False, "files": []},
+                    "intraoral_scan": {"available": False, "files": [], "formats": []},
+                    "photos": {"available": False, "files": []},
+                },
+                "ai_ready_context": {
+                    "case_overview": "",
+                    "known_information": [],
+                    "missing_information": [],
+                    "clinical_review_questions": [],
+                    "llm_prompt_context": "",
+                },
+                "safety": {
+                    "not_for_diagnosis": True,
+                    "requires_dentist_review": True,
+                    "phi_removed": True,
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    assert check_phi_risk(str(packet_path))["risk_level"] == "low"

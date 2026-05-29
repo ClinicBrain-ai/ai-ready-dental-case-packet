@@ -1,0 +1,7 @@
+Source dataset: PhysioNet multimodal dental dataset
+Source URL: https://physionet.org/content/multimodal-dental-dataset/
+Modality: periapical X-ray
+Validation focus: endodontics
+Purpose: MCP and Dental Case Packet infrastructure validation.
+No imaging interpretation, diagnosis, or treatment recommendation is performed.
+Source note: Public PhysioNet dataset with CBCT, panoramic X-ray, and periapical X-ray records.

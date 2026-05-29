@@ -1,0 +1,7 @@
+Source dataset: MMDental
+Source URL: https://www.nature.com/articles/s41597-025-05398-7
+Modality: CBCT
+Validation focus: implant planning
+Purpose: MCP and Dental Case Packet infrastructure validation.
+No imaging interpretation, diagnosis, or treatment recommendation is performed.
+Source note: Open-access multimodal dental dataset with CBCT images and expert records.

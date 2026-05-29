@@ -1,0 +1,107 @@
+{
+  "case_id": "case-140d290263b2",
+  "created_at": "2026-05-29T13:36:32.395480Z",
+  "patient": {
+    "age": null,
+    "sex": null,
+    "deidentified": true
+  },
+  "chief_complaint": "Not provided by this public validation fixture. This field is intentionally non-diagnostic.",
+  "clinical_notes_summary": "Source dataset: ToothFairy Source URL: https://toothfairy3.grand-challenge.org/dataset/ Modality: CBCT Validation focus: endodontics Purpose: MCP and Dental Case Packet infrastructure validation. No imaging interpretation, diagnosis, or treatment recommendation is performed. Source note: Public CBCT benchmark family for maxillofacial structure segmentation.",
+  "treatment_plan_summary": "",
+  "imaging": {
+    "cbct": {
+      "available": true,
+      "series_count": 1,
+      "dicom_metadata_summary": {
+        "Columns": {
+          "values": [
+            "2"
+          ],
+          "count": 1
+        },
+        "Manufacturer": {
+          "values": [
+            "ClinicBrain validation fixture"
+          ],
+          "count": 1
+        },
+        "Modality": {
+          "values": [
+            "CT"
+          ],
+          "count": 1
+        },
+        "PixelSpacing": {
+          "values": [
+            "[0.25, 0.25]"
+          ],
+          "count": 1
+        },
+        "Rows": {
+          "values": [
+            "2"
+          ],
+          "count": 1
+        },
+        "SeriesDescription": {
+          "values": [
+            "Validation fixture - endodontics"
+          ],
+          "count": 1
+        },
+        "SliceThickness": {
+          "values": [
+            "0.25"
+          ],
+          "count": 1
+        },
+        "StudyDate": {
+          "values": [
+            "20260101"
+          ],
+          "count": 1
+        }
+      },
+      "warnings": []
+    },
+    "xray": {
+      "available": false,
+      "files": []
+    },
+    "intraoral_scan": {
+      "available": false,
+      "files": [],
+      "formats": []
+    },
+    "photos": {
+      "available": false,
+      "files": []
+    }
+  },
+  "ai_ready_context": {
+    "case_overview": "Chief complaint: Not provided by this public validation fixture. This field is intentionally non-diagnostic. Clinical notes available: Source dataset: ToothFairy Source URL: https://toothfairy3.grand-challenge.org/dataset/ Modality: CBCT Validation focus: endodontics Purpose: MCP and Dental Case Packet infrastructure validation. No imaging interpretation, diagnosis, or treatment recommendation is performed. Source note: Public CBCT benchmark family for maxillofacial structure segmentation.",
+    "known_information": [
+      "chief_complaint",
+      "clinical_notes",
+      "cbct"
+    ],
+    "missing_information": [
+      "Missing treatment_plan.txt.",
+      "Missing X-ray records.",
+      "Missing Intraoral scan files.",
+      "Missing Clinical photos."
+    ],
+    "clinical_review_questions": [
+      "Please confirm that the de-identified packet accurately reflects the available records.",
+      "Please identify whether any omitted source records should be added before AI workflow use.",
+      "Please confirm whether the missing records are unavailable or intentionally omitted."
+    ],
+    "llm_prompt_context": "You are reviewing a de-identified dental case packet. Do not diagnose. Do not provide treatment recommendations. Summarize the available information, identify missing records, and generate questions for dentist review. All output is for clinical review only.\n\nCase overview: Chief complaint: Not provided by this public validation fixture. This field is intentionally non-diagnostic. Clinical notes available: Source dataset: ToothFairy Source URL: https://toothfairy3.grand-challenge.org/dataset/ Modality: CBCT Validation focus: endodontics Purpose: MCP and Dental Case Packet infrastructure validation. No imaging interpretation, diagnosis, or treatment recommendation is performed. Source note: Public CBCT benchmark family for maxillofacial structure segmentation.\nMissing information: Missing treatment_plan.txt.; Missing X-ray records.; Missing Intraoral scan files.; Missing Clinical photos."
+  },
+  "safety": {
+    "not_for_diagnosis": true,
+    "requires_dentist_review": true,
+    "phi_removed": true
+  }
+}

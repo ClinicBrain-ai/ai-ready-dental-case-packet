@@ -1,0 +1,9 @@
+{
+  "case_id": "cv-002",
+  "source_dataset": "PhysioNet multimodal dental dataset",
+  "source_url": "https://physionet.org/content/multimodal-dental-dataset/",
+  "modality": "CBCT + panoramic X-ray",
+  "validation_focus": "implant planning",
+  "privacy": "Public-source-referenced fixture; no private patient data included.",
+  "clinical_use": "Infrastructure validation only. No diagnosis or treatment advice."
+}

@@ -1,0 +1,1 @@
+Not provided by this public validation fixture. This field is intentionally non-diagnostic.

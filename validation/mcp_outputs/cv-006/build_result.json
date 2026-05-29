@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "case_packet_path": "validation/packet_outputs/cv-006/case_packet.json",
+  "markdown_report_path": "validation/packet_outputs/cv-006/case_packet.md",
+  "manifest_path": "validation/packet_outputs/cv-006/manifest.json",
+  "warnings": []
+}

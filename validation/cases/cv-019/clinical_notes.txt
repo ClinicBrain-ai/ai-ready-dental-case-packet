@@ -1,0 +1,7 @@
+Source dataset: ToothFairy
+Source URL: https://toothfairy3.grand-challenge.org/dataset/
+Modality: CBCT
+Validation focus: full jaw anatomy
+Purpose: MCP and Dental Case Packet infrastructure validation.
+No imaging interpretation, diagnosis, or treatment recommendation is performed.
+Source note: Public CBCT benchmark family for maxillofacial structure segmentation.

@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "case_packet_path": "validation/packet_outputs/cv-015/case_packet.json",
+  "markdown_report_path": "validation/packet_outputs/cv-015/case_packet.md",
+  "manifest_path": "validation/packet_outputs/cv-015/manifest.json",
+  "warnings": [
+    "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+  ]
+}

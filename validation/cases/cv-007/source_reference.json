@@ -1,0 +1,9 @@
+{
+  "case_id": "cv-007",
+  "source_dataset": "Teeth segmentation panoramic X-ray dataset",
+  "source_url": "https://www.kaggle.com/datasets/humansintheloop/teeth-segmentation-on-dental-x-ray-images",
+  "modality": "panoramic X-ray",
+  "validation_focus": "missing teeth",
+  "privacy": "Public-source-referenced fixture; no private patient data included.",
+  "clinical_use": "Infrastructure validation only. No diagnosis or treatment advice."
+}

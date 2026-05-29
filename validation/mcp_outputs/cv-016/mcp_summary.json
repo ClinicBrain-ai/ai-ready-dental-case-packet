@@ -1,0 +1,20 @@
+{
+  "case_overview": "Chief complaint: Not provided by this public validation fixture. This field is intentionally non-diagnostic. Clinical notes available: Source dataset: CTooth+ Source URL: https://www.kaggle.com/datasets/weiweicui/ctooth-dataset Modality: CBCT Validation focus: endodontics Purpose: MCP and Dental Case Packet infrastructure validation. No imaging interpretation, diagnosis, or treatment recommendation is performed. Source note: Open-access CBCT tooth volume segmentation dataset.",
+  "available_records": [
+    "chief_complaint",
+    "clinical_notes",
+    "cbct"
+  ],
+  "missing_information": [
+    "Missing treatment_plan.txt.",
+    "Missing X-ray records.",
+    "Missing Intraoral scan files.",
+    "Missing Clinical photos."
+  ],
+  "dentist_review_questions": [
+    "Please confirm that the de-identified packet accurately reflects the available records.",
+    "Please identify whether any omitted source records should be added before AI workflow use.",
+    "Please confirm whether the missing records are unavailable or intentionally omitted."
+  ],
+  "safety_disclaimer": "For clinical review only. This MCP server does not diagnose, does not recommend treatment, does not claim clinical accuracy, and does not send patient data to external APIs."
+}

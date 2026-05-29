@@ -1,0 +1,9 @@
+{
+  "case_id": "cv-016",
+  "source_dataset": "CTooth+",
+  "source_url": "https://www.kaggle.com/datasets/weiweicui/ctooth-dataset",
+  "modality": "CBCT",
+  "validation_focus": "endodontics",
+  "privacy": "Public-source-referenced fixture; no private patient data included.",
+  "clinical_use": "Infrastructure validation only. No diagnosis or treatment advice."
+}

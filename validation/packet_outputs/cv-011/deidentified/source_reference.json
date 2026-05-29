@@ -1,0 +1,9 @@
+{
+  "case_id": "cv-011",
+  "source_dataset": "Open-Full-Jaw",
+  "source_url": "https://arxiv.org/abs/2209.07576",
+  "modality": "CBCT-derived full jaw model",
+  "validation_focus": "orthodontics",
+  "privacy": "Public-source-referenced fixture; no private patient data included.",
+  "clinical_use": "Infrastructure validation only. No diagnosis or treatment advice."
+}

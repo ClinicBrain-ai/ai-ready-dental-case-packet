@@ -1,0 +1,50 @@
+[
+  {
+    "file_type": "dicom",
+    "path": "cbct/slice_0001.dcm",
+    "sha256": "64d2bac2f47a7e18ce8cbb65f34a960e2ea885ee6917e2b85fe9652b36c75659",
+    "size_bytes": 676,
+    "extension": "dcm",
+    "role": "cbct"
+  },
+  {
+    "file_type": "text",
+    "path": "chief_complaint.txt",
+    "sha256": "bb28c33e38e3896eb1c0f4bd4c60fa923f42e0823febf95d4b0663403822486b",
+    "size_bytes": 91,
+    "extension": "txt",
+    "role": "chief_complaint"
+  },
+  {
+    "file_type": "text",
+    "path": "clinical_notes.txt",
+    "sha256": "37140b1ce09909a3c134d22e5c5059d2694e15996c8ba0e15e2104598dde30d2",
+    "size_bytes": 362,
+    "extension": "txt",
+    "role": "clinical_notes"
+  },
+  {
+    "file_type": "mesh",
+    "path": "intraoral_scan/jaw_reference.obj",
+    "sha256": "697b00ab13410c52a542d2e9c63711fcc04e9cbf6c0d3439a9b43cc812e6e713",
+    "size_bytes": 32,
+    "extension": "obj",
+    "role": "intraoral_scan"
+  },
+  {
+    "file_type": "json",
+    "path": "patient_info.json",
+    "sha256": "42ac2ac9ad850d784c50c199de99d5d03e566c81177e9a657114129fd529308c",
+    "size_bytes": 32,
+    "extension": "json",
+    "role": "patient_info"
+  },
+  {
+    "file_type": "json",
+    "path": "source_reference.json",
+    "sha256": "dd0d18287cd25906e870cfac1ce1d632ca556c6eb5a6b2b1851b21185949495a",
+    "size_bytes": 368,
+    "extension": "json",
+    "role": "other"
+  }
+]

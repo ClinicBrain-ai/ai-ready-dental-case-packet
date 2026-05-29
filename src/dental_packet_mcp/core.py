@@ -41,6 +41,10 @@ PHI_VALUE_PATTERNS = {
     "date-like text": re.compile(r"\b(?:19|20)\d{2}[-/]\d{1,2}[-/]\d{1,2}\b"),
 }
 
+PHI_VALUE_IGNORE_PATHS = {
+    "$.created_at",
+}
+
 
 def _read_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -164,7 +168,7 @@ def check_phi_risk(case_packet_path: str) -> dict[str, Any]:
         field_name = path.rsplit(".", maxsplit=1)[-1].lower().replace("_", "")
         if field_name in PHI_FIELD_HINTS:
             flagged_fields.add(path)
-        if isinstance(value, str):
+        if isinstance(value, str) and path not in PHI_VALUE_IGNORE_PATHS:
             for label, pattern in PHI_VALUE_PATTERNS.items():
                 if pattern.search(value):
                     flagged_fields.add(f"{path} ({label})")

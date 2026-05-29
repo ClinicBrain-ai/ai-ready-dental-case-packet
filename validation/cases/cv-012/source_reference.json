@@ -1,0 +1,9 @@
+{
+  "case_id": "cv-012",
+  "source_dataset": "MMDental",
+  "source_url": "https://www.nature.com/articles/s41597-025-05398-7",
+  "modality": "CBCT + records",
+  "validation_focus": "orthodontics",
+  "privacy": "Public-source-referenced fixture; no private patient data included.",
+  "clinical_use": "Infrastructure validation only. No diagnosis or treatment advice."
+}

@@ -1,0 +1,7 @@
+Source dataset: Teeth segmentation panoramic X-ray dataset
+Source URL: https://www.kaggle.com/datasets/humansintheloop/teeth-segmentation-on-dental-x-ray-images
+Modality: panoramic X-ray
+Validation focus: missing teeth
+Purpose: MCP and Dental Case Packet infrastructure validation.
+No imaging interpretation, diagnosis, or treatment recommendation is performed.
+Source note: Open panoramic dental X-ray segmentation dataset derived from public radiographs.

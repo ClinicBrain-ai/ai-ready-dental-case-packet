@@ -1,0 +1,7 @@
+Source dataset: Open-Full-Jaw
+Source URL: https://arxiv.org/abs/2209.07576
+Modality: CBCT-derived full jaw model
+Validation focus: orthodontics
+Purpose: MCP and Dental Case Packet infrastructure validation.
+No imaging interpretation, diagnosis, or treatment recommendation is performed.
+Source note: Open-access CBCT-derived human jaw model dataset and pipeline.

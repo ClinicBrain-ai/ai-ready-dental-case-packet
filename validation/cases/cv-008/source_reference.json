@@ -1,0 +1,9 @@
+{
+  "case_id": "cv-008",
+  "source_dataset": "Open-Full-Jaw",
+  "source_url": "https://arxiv.org/abs/2209.07576",
+  "modality": "CBCT-derived jaw mesh",
+  "validation_focus": "missing teeth",
+  "privacy": "Public-source-referenced fixture; no private patient data included.",
+  "clinical_use": "Infrastructure validation only. No diagnosis or treatment advice."
+}

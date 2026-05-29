@@ -1,0 +1,42 @@
+[
+  {
+    "file_type": "dicom",
+    "path": "cbct/slice_0001.dcm",
+    "sha256": "5113aec567a99fd05dc92514d0d18351f15bda5b21bf16dcdd7ea03501254ffe",
+    "size_bytes": 680,
+    "extension": "dcm",
+    "role": "cbct"
+  },
+  {
+    "file_type": "text",
+    "path": "chief_complaint.txt",
+    "sha256": "bb28c33e38e3896eb1c0f4bd4c60fa923f42e0823febf95d4b0663403822486b",
+    "size_bytes": 91,
+    "extension": "txt",
+    "role": "chief_complaint"
+  },
+  {
+    "file_type": "text",
+    "path": "clinical_notes.txt",
+    "sha256": "8e92ec55b278471c880cc59e9555285dbfe4654675b75d9c528261ba9882a06c",
+    "size_bytes": 368,
+    "extension": "txt",
+    "role": "clinical_notes"
+  },
+  {
+    "file_type": "json",
+    "path": "patient_info.json",
+    "sha256": "42ac2ac9ad850d784c50c199de99d5d03e566c81177e9a657114129fd529308c",
+    "size_bytes": 32,
+    "extension": "json",
+    "role": "patient_info"
+  },
+  {
+    "file_type": "json",
+    "path": "source_reference.json",
+    "sha256": "3a1beb1d894fa9659cdd972be05834e63d59f19675c9d6e2d068d02c98a1ad02",
+    "size_bytes": 362,
+    "extension": "json",
+    "role": "other"
+  }
+]

@@ -1,0 +1,7 @@
+Source dataset: CTooth+
+Source URL: https://www.kaggle.com/datasets/weiweicui/ctooth-dataset
+Modality: CBCT
+Validation focus: full jaw anatomy
+Purpose: MCP and Dental Case Packet infrastructure validation.
+No imaging interpretation, diagnosis, or treatment recommendation is performed.
+Source note: Open-access CBCT tooth volume segmentation dataset.

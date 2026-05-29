@@ -1,0 +1,121 @@
+{
+  "case_id": "case-8a1fee6366b7",
+  "created_at": "2026-05-29T13:36:32.339273Z",
+  "patient": {
+    "age": null,
+    "sex": null,
+    "deidentified": true
+  },
+  "chief_complaint": "Not provided by this public validation fixture. This field is intentionally non-diagnostic.",
+  "clinical_notes_summary": "Source dataset: Open-Full-Jaw Source URL: https://arxiv.org/abs/[REDACTED_PHONE] Modality: CBCT-derived jaw mesh Validation focus: implant planning Purpose: MCP and Dental Case Packet infrastructure validation. No imaging interpretation, diagnosis, or treatment recommendation is performed. Source note: Open-access CBCT-derived human jaw model dataset and pipeline.",
+  "treatment_plan_summary": "",
+  "imaging": {
+    "cbct": {
+      "available": true,
+      "series_count": 1,
+      "dicom_metadata_summary": {
+        "Columns": {
+          "values": [
+            "2"
+          ],
+          "count": 1
+        },
+        "Manufacturer": {
+          "values": [
+            "ClinicBrain validation fixture"
+          ],
+          "count": 1
+        },
+        "Modality": {
+          "values": [
+            "CT"
+          ],
+          "count": 1
+        },
+        "PixelSpacing": {
+          "values": [
+            "[0.25, 0.25]"
+          ],
+          "count": 1
+        },
+        "Rows": {
+          "values": [
+            "2"
+          ],
+          "count": 1
+        },
+        "SeriesDescription": {
+          "values": [
+            "Validation fixture - implant planning"
+          ],
+          "count": 1
+        },
+        "SliceThickness": {
+          "values": [
+            "0.25"
+          ],
+          "count": 1
+        },
+        "StudyDate": {
+          "values": [
+            "20260101"
+          ],
+          "count": 1
+        }
+      },
+      "warnings": []
+    },
+    "xray": {
+      "available": false,
+      "files": []
+    },
+    "intraoral_scan": {
+      "available": true,
+      "files": [
+        {
+          "path": "intraoral_scan/jaw_reference.obj",
+          "format": "obj",
+          "size_bytes": 32,
+          "sha256": "697b00ab13410c52a542d2e9c63711fcc04e9cbf6c0d3439a9b43cc812e6e713",
+          "mesh_metadata": {
+            "vertices": 3,
+            "faces": 1,
+            "is_empty": false
+          }
+        }
+      ],
+      "formats": [
+        "obj"
+      ]
+    },
+    "photos": {
+      "available": false,
+      "files": []
+    }
+  },
+  "ai_ready_context": {
+    "case_overview": "Chief complaint: Not provided by this public validation fixture. This field is intentionally non-diagnostic. Clinical notes available: Source dataset: Open-Full-Jaw Source URL: https://arxiv.org/abs/[REDACTED_PHONE] Modality: CBCT-derived jaw mesh Validation focus: implant planning Purpose: MCP and Dental Case Packet infrastructure validation. No imaging interpretation, diagnosis, or treatment recommendation is performed. Source note: Open-access CBCT-derived human jaw model dataset and pipeline.",
+    "known_information": [
+      "chief_complaint",
+      "clinical_notes",
+      "cbct",
+      "intraoral_scan"
+    ],
+    "missing_information": [
+      "Missing treatment_plan.txt.",
+      "Missing X-ray records.",
+      "Missing Clinical photos."
+    ],
+    "clinical_review_questions": [
+      "Please confirm that the de-identified packet accurately reflects the available records.",
+      "Please identify whether any omitted source records should be added before AI workflow use.",
+      "Please confirm whether the missing records are unavailable or intentionally omitted."
+    ],
+    "llm_prompt_context": "You are reviewing a de-identified dental case packet. Do not diagnose. Do not provide treatment recommendations. Summarize the available information, identify missing records, and generate questions for dentist review. All output is for clinical review only.\n\nCase overview: Chief complaint: Not provided by this public validation fixture. This field is intentionally non-diagnostic. Clinical notes available: Source dataset: Open-Full-Jaw Source URL: https://arxiv.org/abs/[REDACTED_PHONE] Modality: CBCT-derived jaw mesh Validation focus: implant planning Purpose: MCP and Dental Case Packet infrastructure validation. No imaging interpretation, diagnosis, or treatment recommendation is performed. Source note: Open-access CBCT-derived human jaw model dataset and pipeline.\nMissing information: Missing treatment_plan.txt.; Missing X-ray records.; Missing Clinical photos."
+  },
+  "safety": {
+    "not_for_diagnosis": true,
+    "requires_dentist_review": true,
+    "phi_removed": true
+  }
+}

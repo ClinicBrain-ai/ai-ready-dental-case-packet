@@ -1,0 +1,325 @@
+{
+  "name": "Clinical Validation Dataset v0.1",
+  "created_at": "2026-05-29T13:36:32Z",
+  "total_cases": 20,
+  "cases": [
+    {
+      "case_id": "cv-001",
+      "source_dataset": "MMDental",
+      "source_url": "https://www.nature.com/articles/s41597-025-05398-7",
+      "modality": "CBCT",
+      "validation_focus": "implant planning",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-002",
+      "source_dataset": "PhysioNet multimodal dental dataset",
+      "source_url": "https://physionet.org/content/multimodal-dental-dataset/",
+      "modality": "CBCT + panoramic X-ray",
+      "validation_focus": "implant planning",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-003",
+      "source_dataset": "ToothFairy",
+      "source_url": "https://toothfairy3.grand-challenge.org/dataset/",
+      "modality": "CBCT",
+      "validation_focus": "implant planning",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-004",
+      "source_dataset": "Open-Full-Jaw",
+      "source_url": "https://arxiv.org/abs/2209.07576",
+      "modality": "CBCT-derived jaw mesh",
+      "validation_focus": "implant planning",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-005",
+      "source_dataset": "MMDental",
+      "source_url": "https://www.nature.com/articles/s41597-025-05398-7",
+      "modality": "CBCT",
+      "validation_focus": "missing teeth",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-006",
+      "source_dataset": "PhysioNet multimodal dental dataset",
+      "source_url": "https://physionet.org/content/multimodal-dental-dataset/",
+      "modality": "panoramic X-ray",
+      "validation_focus": "missing teeth",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-007",
+      "source_dataset": "Teeth segmentation panoramic X-ray dataset",
+      "source_url": "https://www.kaggle.com/datasets/humansintheloop/teeth-segmentation-on-dental-x-ray-images",
+      "modality": "panoramic X-ray",
+      "validation_focus": "missing teeth",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-008",
+      "source_dataset": "Open-Full-Jaw",
+      "source_url": "https://arxiv.org/abs/2209.07576",
+      "modality": "CBCT-derived jaw mesh",
+      "validation_focus": "missing teeth",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-009",
+      "source_dataset": "PhysioNet multimodal dental dataset",
+      "source_url": "https://physionet.org/content/multimodal-dental-dataset/",
+      "modality": "CBCT + panoramic X-ray",
+      "validation_focus": "orthodontics",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-010",
+      "source_dataset": "ToothFairy",
+      "source_url": "https://toothfairy3.grand-challenge.org/dataset/",
+      "modality": "CBCT",
+      "validation_focus": "orthodontics",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-011",
+      "source_dataset": "Open-Full-Jaw",
+      "source_url": "https://arxiv.org/abs/2209.07576",
+      "modality": "CBCT-derived full jaw model",
+      "validation_focus": "orthodontics",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-012",
+      "source_dataset": "MMDental",
+      "source_url": "https://www.nature.com/articles/s41597-025-05398-7",
+      "modality": "CBCT + records",
+      "validation_focus": "orthodontics",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": [
+        ".pdf"
+      ]
+    },
+    {
+      "case_id": "cv-013",
+      "source_dataset": "MMDental",
+      "source_url": "https://www.nature.com/articles/s41597-025-05398-7",
+      "modality": "CBCT + records",
+      "validation_focus": "endodontics",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-014",
+      "source_dataset": "PhysioNet multimodal dental dataset",
+      "source_url": "https://physionet.org/content/multimodal-dental-dataset/",
+      "modality": "periapical X-ray",
+      "validation_focus": "endodontics",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-015",
+      "source_dataset": "ToothFairy",
+      "source_url": "https://toothfairy3.grand-challenge.org/dataset/",
+      "modality": "CBCT",
+      "validation_focus": "endodontics",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-016",
+      "source_dataset": "CTooth+",
+      "source_url": "https://www.kaggle.com/datasets/weiweicui/ctooth-dataset",
+      "modality": "CBCT",
+      "validation_focus": "endodontics",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-017",
+      "source_dataset": "Open-Full-Jaw",
+      "source_url": "https://arxiv.org/abs/2209.07576",
+      "modality": "CBCT-derived full jaw model",
+      "validation_focus": "wisdom teeth",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-018",
+      "source_dataset": "PhysioNet multimodal dental dataset",
+      "source_url": "https://physionet.org/content/multimodal-dental-dataset/",
+      "modality": "panoramic X-ray",
+      "validation_focus": "wisdom teeth",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [],
+      "schema_issues": [],
+      "unsupported_formats": [
+        ".pdf"
+      ]
+    },
+    {
+      "case_id": "cv-019",
+      "source_dataset": "ToothFairy",
+      "source_url": "https://toothfairy3.grand-challenge.org/dataset/",
+      "modality": "CBCT",
+      "validation_focus": "full jaw anatomy",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": []
+    },
+    {
+      "case_id": "cv-020",
+      "source_dataset": "CTooth+",
+      "source_url": "https://www.kaggle.com/datasets/weiweicui/ctooth-dataset",
+      "modality": "CBCT",
+      "validation_focus": "full jaw anatomy",
+      "build_success": true,
+      "validation_success": true,
+      "phi_risk_level": "low",
+      "mcp_success": true,
+      "warnings": [
+        "DICOM copied by reference only; metadata PHI is not exported: cbct/slice_0001.dcm"
+      ],
+      "schema_issues": [],
+      "unsupported_formats": [
+        ".gz"
+      ]
+    }
+  ]
+}
