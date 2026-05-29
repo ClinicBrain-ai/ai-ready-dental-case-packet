@@ -1,0 +1,2 @@
+Clinical notes placeholder for MVP testing. Remove PHI before real use.
+

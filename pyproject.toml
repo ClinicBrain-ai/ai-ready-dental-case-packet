@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-ready-dental-case-packet"
+version = "0.1.0"
+description = "Build de-identified, LLM-ready dental case packets from local dental records."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "ai-ready-dental-case-packet contributors" }]
+dependencies = [
+  "pydantic>=2.7",
+  "pydicom>=2.4",
+  "trimesh>=4.0",
+  "pillow>=10.0",
+  "typer>=0.12,<0.24",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.5",
+]
+
+[project.scripts]
+dental-packet = "dental_packet.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["dental_packet*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

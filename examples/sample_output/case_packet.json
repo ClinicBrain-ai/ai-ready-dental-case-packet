@@ -1,0 +1,58 @@
+{
+  "case_id": "case-78c0b1a5f543",
+  "created_at": "2026-05-29T10:12:04.516035Z",
+  "patient": {
+    "age": 45,
+    "sex": "F",
+    "deidentified": true
+  },
+  "chief_complaint": "Patient reports discomfort around the upper right posterior area.",
+  "clinical_notes_summary": "Clinical notes placeholder for MVP testing. Remove PHI before real use.",
+  "treatment_plan_summary": "Treatment plan placeholder provided by clinician for packet structuring only.",
+  "imaging": {
+    "cbct": {
+      "available": false,
+      "series_count": 0,
+      "dicom_metadata_summary": {},
+      "warnings": []
+    },
+    "xray": {
+      "available": false,
+      "files": []
+    },
+    "intraoral_scan": {
+      "available": false,
+      "files": [],
+      "formats": []
+    },
+    "photos": {
+      "available": false,
+      "files": []
+    }
+  },
+  "ai_ready_context": {
+    "case_overview": "Chief complaint: Patient reports discomfort around the upper right posterior area. Clinical notes available: Clinical notes placeholder for MVP testing. Remove PHI before real use. Treatment plan available: Treatment plan placeholder provided by clinician for packet structuring only.",
+    "known_information": [
+      "chief_complaint",
+      "clinical_notes",
+      "treatment_plan"
+    ],
+    "missing_information": [
+      "Missing CBCT DICOM records.",
+      "Missing X-ray records.",
+      "Missing Intraoral scan files.",
+      "Missing Clinical photos."
+    ],
+    "clinical_review_questions": [
+      "Please confirm that the de-identified packet accurately reflects the available records.",
+      "Please identify whether any omitted source records should be added before AI workflow use.",
+      "Please confirm whether the missing records are unavailable or intentionally omitted."
+    ],
+    "llm_prompt_context": "You are reviewing a de-identified dental case packet. Do not diagnose. Do not provide treatment recommendations. Summarize the available information, identify missing records, and generate questions for dentist review. All output is for clinical review only.\n\nCase overview: Chief complaint: Patient reports discomfort around the upper right posterior area. Clinical notes available: Clinical notes placeholder for MVP testing. Remove PHI before real use. Treatment plan available: Treatment plan placeholder provided by clinician for packet structuring only.\nMissing information: Missing CBCT DICOM records.; Missing X-ray records.; Missing Intraoral scan files.; Missing Clinical photos."
+  },
+  "safety": {
+    "not_for_diagnosis": true,
+    "requires_dentist_review": true,
+    "phi_removed": true
+  }
+}

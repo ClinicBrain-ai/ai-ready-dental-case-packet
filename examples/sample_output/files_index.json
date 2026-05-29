@@ -1,0 +1,34 @@
+[
+  {
+    "file_type": "text",
+    "path": "chief_complaint.txt",
+    "sha256": "1e26910f9f3715f243156602209611c5a3d11a613a7a0438207e6e702f353157",
+    "size_bytes": 67,
+    "extension": "txt",
+    "role": "chief_complaint"
+  },
+  {
+    "file_type": "text",
+    "path": "clinical_notes.txt",
+    "sha256": "58fe462a49cd3d75cb761824128d74c35247e9a067a80f78e10adeb2dcb8de62",
+    "size_bytes": 73,
+    "extension": "txt",
+    "role": "clinical_notes"
+  },
+  {
+    "file_type": "json",
+    "path": "patient_info.json",
+    "sha256": "99e5957c8bbae7d15f15fdb3aef502ac112a843f57eb54b4093b45cee07576b0",
+    "size_bytes": 87,
+    "extension": "json",
+    "role": "patient_info"
+  },
+  {
+    "file_type": "text",
+    "path": "treatment_plan.txt",
+    "sha256": "5e6286043c2b6a8a9f63aa7b0f08f552d8d67f0713ab805a2261a78dfad1da66",
+    "size_bytes": 79,
+    "extension": "txt",
+    "role": "treatment_plan"
+  }
+]
