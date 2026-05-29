@@ -23,13 +23,17 @@ dev = [
   "pytest>=8.0",
   "ruff>=0.5",
 ]
+mcp = [
+  "mcp>=1.0",
+]
 
 [project.scripts]
 dental-packet = "dental_packet.cli:app"
+dental-packet-mcp = "dental_packet_mcp.server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["dental_packet*"]
+include = ["dental_packet*", "dental_packet_mcp*"]
 
 [tool.ruff]
 line-length = 100
