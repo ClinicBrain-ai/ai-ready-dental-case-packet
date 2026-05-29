@@ -1,0 +1,37 @@
+name: Feature request
+description: Propose an infrastructure feature.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This project does not accept feature requests for automatic diagnosis or treatment recommendations.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What infrastructure gap should this solve?
+    validations:
+      required: true
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Target layer
+      options:
+        - Data Ingestion
+        - Normalization
+        - De-identification
+        - Dental Context Builder
+        - AI-ready Case Packet
+        - LLM Connectors
+        - Future Agent Layer
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+    validations:
+      required: true
+

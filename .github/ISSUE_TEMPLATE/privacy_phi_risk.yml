@@ -1,0 +1,30 @@
+name: Privacy or PHI risk
+description: Report a possible privacy risk without including sensitive data.
+title: "[Privacy]: "
+labels: ["privacy", "security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not paste PHI or real patient records. If this is sensitive, request a private disclosure channel first.
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk summary
+      description: Describe the category of risk without sensitive values.
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Affected area
+      description: Module, output file, field, or workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Suggested mitigation
+    validations:
+      required: false
+
