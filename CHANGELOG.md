@@ -1,5 +1,41 @@
 # Changelog
 
+## v0.1.3 — Discovery and Installation Readiness
+
+This release prepares controlled publication paths for GitHub, PyPI, MCP Registry, and future agent ecosystem discovery.
+
+### Added
+
+- `registry/server.json` for MCP Registry preparation.
+- GitHub topics setup guide.
+- Publication plan covering GitHub release, TestPyPI, PyPI, MCP Registry submission, and agent ecosystem discovery.
+- MCP Registry schema notes for supported fields and publisher metadata.
+
+### Improved
+
+- PyPI packaging metadata for `dental-packet`.
+- SPDX license metadata.
+- `dental-packet-mcp --help` smoke-test behavior.
+- Adoption readiness review with updated scores and remaining blockers.
+
+### Validated
+
+- Local package build produces source distribution and wheel.
+- `twine check dist/*` passes.
+- Clean wheel install succeeds.
+- `dental-packet --help` works from installed wheel.
+- `dental-packet-mcp --help` works from installed wheel.
+- Sample build and validate commands work from installed wheel.
+- `registry/server.json` validates against the official MCP Registry `2025-12-11` schema.
+
+### Safety
+
+- No diagnosis features.
+- No treatment recommendation features.
+- No clinical interpretation.
+- No patient data upload behavior.
+- Local-first and dentist-review-only boundaries remain unchanged.
+
 ## v0.1.2 — Agent-native Adoption Layer
 
 This release makes the repository easier for AI coding agents and MCP-compatible agent workflows to understand, use, extend, and call safely.
