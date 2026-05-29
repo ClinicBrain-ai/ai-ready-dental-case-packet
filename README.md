@@ -13,6 +13,19 @@ Building the AI-native data layer for dentistry — transforming CBCT, X-rays, i
 
 The CLI reads files like clinical notes, treatment plans, DICOM folders, images, and scan files. It writes structured JSON, Markdown, file manifests, logs, and de-identified text copies.
 
+## Agent-native Dental Context Layer
+
+This repo is designed so AI agents can safely transform local dental records into structured Dental Case Packets through CLI or MCP, while preserving privacy and avoiding diagnosis.
+
+It can be used by Codex, Cursor, Claude Code, OpenAI Agents, and other local agent workflows as a dental context layer. Patient data can remain on the local machine; the reference implementation does not upload records or call external APIs by default.
+
+Agent entry points:
+
+- [AGENTS.md](AGENTS.md): operating guide for AI coding agents.
+- [docs/agent-use-cases.md](docs/agent-use-cases.md): safe workflows for building, validating, summarizing, and checking packets.
+- [docs/mcp-client-config.md](docs/mcp-client-config.md): example MCP client configurations.
+- [docs/security-for-agents.md](docs/security-for-agents.md): agent-specific security and PHI risk guidance.
+
 ## What This Project Is Not
 
 - It is not a dental chatbot.
