@@ -1,12 +1,41 @@
 # ai-ready-dental-case-packet
 
-`ai-ready-dental-case-packet` is an open-source MVP CLI for turning local dental records into a de-identified, structured Dental Case Packet that can be used by LLM and AI workflow tools.
+`ai-ready-dental-case-packet` is an open-source foundation for **AI-native Dental Data Infrastructure**.
 
-It does not diagnose, does not recommend treatment, and does not replace dentist review. All AI-facing output is marked for clinical review only.
+It transforms dental records into a de-identified, portable, structured Dental Case Packet that can become the context layer for LLMs, agent frameworks, clinical review systems, dental copilots, and future dental foundation models.
 
-## Why Dental Teams Need This
+This is not a dental chatbot and not a diagnostic AI application. It is infrastructure: a standards-oriented packet builder for organizing dental data into AI-ready context.
 
-Dental cases often arrive as scattered CBCT DICOM studies, X-rays, intraoral scans, photos, clinical notes, and treatment plans. AI workflows work better when those records are organized into predictable references, summaries, file indexes, and safety disclaimers. This project creates that packet while avoiding direct inclusion of large imaging files in the JSON output.
+## Design Principles
+
+- Do not diagnose.
+- Do not generate treatment recommendations.
+- Do not claim clinical accuracy.
+- Only transform data into structured context.
+- Make every output suitable for dentist review.
+- Use privacy-first architecture.
+- De-identify by default.
+- Keep the project open-source friendly.
+
+Every AI-facing output must be treated as **for clinical review only**.
+
+## Why Dentistry Needs An AI-Native Data Layer
+
+Dental cases often arrive as scattered CBCT DICOM studies, panoramic X-rays, periapical X-rays, intraoral scans, photos, clinical notes, chief complaints, and treatment plans. LLM workflows work better when those records are organized into predictable references, normalized metadata, de-identified summaries, file indexes, and safety disclaimers.
+
+This project creates the Dental Case Packet: a standardized context object that can be consumed by:
+
+- GPT
+- Claude
+- Gemini
+- OpenAI Agents
+- dental copilots
+- clinical review systems
+- future dental foundation models
+
+Think of the long-term direction as **DICOM + FHIR + LangChain for dentistry**.
+
+## Current MVP
 
 ## Install
 
@@ -28,6 +57,18 @@ Validate a generated packet:
 
 ```bash
 python -m dental_packet validate --input ./case_packet_output/case_packet.json
+```
+
+## Infrastructure Layers
+
+```mermaid
+flowchart TD
+  A["Layer 1: Data Ingestion<br/>DICOM, STL, PLY, OBJ, JPG, PNG, TXT, PDF"] --> B["Layer 2: Normalization<br/>standard metadata"]
+  B --> C["Layer 3: De-identification<br/>PHI removal by default"]
+  C --> D["Layer 4: Dental Context Builder<br/>structured case representation"]
+  D --> E["Layer 5: AI-ready Case Packet<br/>portable JSON format"]
+  E --> F["Layer 6: LLM Connectors<br/>OpenAI, Anthropic, Gemini"]
+  F --> G["Layer 7: Future Agent Layer<br/>dental agents, copilots, review workflows"]
 ```
 
 ## Input Structure
@@ -68,6 +109,7 @@ case_packet_output/
 - Intraoral scans: `.stl`, `.ply`, `.obj`
 - Narrative records: `.txt`
 - Patient demographic input: `patient_info.json`
+- PDF support is planned in the ingestion layer.
 
 ## Privacy And Safety
 
@@ -88,6 +130,12 @@ If PHI-like DICOM fields such as `PatientName`, `PatientID`, `PatientBirthDate`,
 
 This project is for data organization, de-identification, format conversion, indexing, summarization, and structuring. It is not for automatic diagnosis and does not generate treatment advice. All packet content and AI outputs are for clinical review only and require dentist review.
 
+## Specification And Architecture
+
+- [Dental Case Packet Specification v0.1](docs/packet-spec.md)
+- [Architecture Review](docs/architecture-review.md)
+- [Roadmap](docs/roadmap.md)
+
 ## Development
 
 ```bash
@@ -95,13 +143,8 @@ ruff check .
 pytest
 ```
 
-## Roadmap
+## Open Source
 
-1. DICOM viewer integration
-2. CBCT anatomical labeling
-3. Treatment plan diff
-4. PMS integration
-5. OpenAI API optional summarization
-6. Web upload portal
-7. Taiwan dental workflow localization
+This repository currently uses the MIT License for low-friction adoption. See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before contributing.
 
+For infrastructure vendors and clinical teams who need explicit patent protection, Apache-2.0 may become the better long-term license. The license tradeoff is documented in [CONTRIBUTING.md](CONTRIBUTING.md).
