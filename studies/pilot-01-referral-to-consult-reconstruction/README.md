@@ -18,9 +18,16 @@ Dataset v0.1 has been created using 10 synthetic educational referral-consult pa
 
 The next step is Dataset v0.2 using messier published educational cases and ideally a second coder.
 
+## Dataset v0.2 Preparation
+
+[Dataset v0.2](dataset-v0.2/) is being prepared for published educational cases. The first step is ethical and copyright-safe source selection and abstraction: citation-only indexing, paraphrased educational artifact pairs, and no copied full case text.
+
+The goal is to move beyond synthetic cases without claiming clinical validity.
+
 ## Study Materials
 
 - [Dataset v0.1](dataset-v0.1/)
+- [Dataset v0.2 preparation](dataset-v0.2/)
 - [Dataset v0.1 summary](dataset-v0.1/dataset-summary.md)
 - [Proof-of-concept analysis plan](dataset-v0.1/proof-of-concept-analysis-plan.md)
 - [Analysis v0.1](analysis-v0.1/)
