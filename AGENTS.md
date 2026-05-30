@@ -4,16 +4,25 @@ This file is the operating guide for AI coding agents working in this repository
 
 ## Project Mission
 
-`ai-ready-dental-case-packet` builds the Dental Context Layer for AI Agents.
+This repository is now framed as the Clinical Cognition Transformation Lab
+(CCTL).
 
-This project is:
+CCTL studies Human-AI Clinical Cognition: the distributed cognitive processes
+that emerge when clinical decisions are jointly produced by clinicians, AI
+systems, documentation artifacts, institutional workflows, healthcare
+organizations, patients, and caregivers.
 
-- AI-native Dental Data Infrastructure.
-- Dental Context Layer for AI Agents.
-- Local-first Dental Case Packet Builder.
-- MCP-compatible tool layer.
+The historical `ai-ready-dental-case-packet` package remains the original
+technical substrate: a local-first Dental Case Packet builder and
+MCP-compatible tool layer. Preserve working CLI, MCP, tests, schemas, examples,
+and validation code unless explicitly asked to change them.
 
-It transforms local dental records into structured, privacy-first Dental Case Packets for clinical review and AI workflows.
+Public-facing documentation should lead with CCTL, Clinical Cognition
+Transformation, Human-AI Clinical Cognition, Cognitive Provenance, Cognitive
+Reconstruction, Longitudinal Cognitive Change, and Human-AI Co-Cognition.
+
+DCS and dental packet materials should be described as origins or downstream
+research artifacts, not as the central research question.
 
 ## What This Project Is Not
 

@@ -1,378 +1,105 @@
-# ai-ready-dental-case-packet
+# Clinical Cognition Transformation Lab (CCTL)
 
-Building the AI-native data layer for dentistry — transforming CBCT, X-rays, intraoral scans, clinical notes, and treatment plans into structured, privacy-first Dental Case Packets for clinical review and AI workflows.
+Studying the transformation of clinical cognition in distributed human-AI healthcare systems.
 
-<!-- mcp-name: io.github.clinicbrain-ai/dental-case-packet-mcp -->
+## Why This Lab Exists
 
-`ai-ready-dental-case-packet` is a developer preview of an open specification and local reference CLI for organizing dental records into a portable, de-identified context package.
+Healthcare is entering a period in which clinical judgment is no longer produced only inside the mind of an individual clinician. Decisions increasingly emerge through interactions among clinicians, AI systems, documentation artifacts, institutional workflows, healthcare organizations, patients, and caregivers.
 
-## What This Project Is
+CCTL exists to study this transformation as a scientific object in its own right.
 
-- A v0.1 Dental Case Packet specification.
-- A local Python CLI that builds and validates packets.
-- Runnable sample input and sample output.
-- Tests and CI for the reference implementation.
+The lab originated in dental AI infrastructure work, including the AI-ready Dental Case Packet and the Dental Context Specification (DCS). Those projects remain important origins and downstream artifacts, but they are no longer the organizing center of this repository.
 
-The CLI reads files like clinical notes, treatment plans, DICOM folders, images, and scan files. It writes structured JSON, Markdown, file manifests, logs, and de-identified text copies.
+## Core Thesis
 
-## Agent-native Dental Context Layer
+Clinical cognition is no longer exclusively an individual cognitive activity. It is increasingly a distributed process emerging from interactions among clinicians, AI systems, documentation artifacts, institutions, and patients.
 
-This repo is designed so AI agents can safely transform local dental records into structured Dental Case Packets through CLI or MCP, while preserving privacy and avoiding diagnosis.
+The scientific challenge is no longer understanding clinical reasoning alone. The scientific challenge is understanding how clinical cognition transforms within distributed human-AI systems.
 
-It can be used by Codex, Cursor, Claude Code, OpenAI Agents, and other local agent workflows as a dental context layer. Patient data can remain on the local machine; the reference implementation does not upload records or call external APIs by default.
+## Human-AI Clinical Cognition
 
-Agent entry points:
+Human-AI Clinical Cognition refers to the distributed cognitive processes that emerge when clinical decisions are jointly produced by clinicians, AI systems, documentation artifacts, institutional workflows, healthcare organizations, patients, and caregivers.
 
-- [AGENTS.md](AGENTS.md): operating guide for AI coding agents.
-- [docs/agent-use-cases.md](docs/agent-use-cases.md): safe workflows for building, validating, summarizing, and checking packets.
-- [docs/mcp-client-config.md](docs/mcp-client-config.md): example MCP client configurations.
-- [docs/security-for-agents.md](docs/security-for-agents.md): agent-specific security and PHI risk guidance.
-- [docs/quick-agent-install.md](docs/quick-agent-install.md): install and configure MCP for local agent clients.
+This framing treats AI not merely as a tool that assists a clinician, but as one participant in a broader cognitive system. Clinical cognition may be preserved, compressed, delegated, translated, simplified, reframed, reconstructed, redistributed, reassigned, or transformed as it moves through that system.
 
-## Why AI Agents Need Dental Context
+## Research Agenda
 
-AI agents work best when records are structured, referenced, validated, and bounded by clear safety rules. Dental records are often scattered across DICOM studies, X-ray images, intraoral scans, photos, notes, and treatment plans. This project gives agents a local context layer that can organize those files without turning them into diagnosis or treatment advice.
+CCTL studies how clinical cognition changes as healthcare becomes a distributed human-AI cognitive system.
 
-## Why Dental Case Packets Exist
+The central questions are:
 
-Dental Case Packets provide a portable JSON and Markdown representation of available dental records, missing information, file references, hashes, summaries, and review questions. They are designed to make dental context easier to inspect, validate, index, and pass into dentist-review-only AI workflows.
+- How does cognition change as it moves between clinicians, AI systems, documents, workflows, organizations, patients, and caregivers?
+- What parts of clinical reasoning survive downstream documentation?
+- What forms of cognition are delegated to AI systems?
+- What forms of expertise are amplified, weakened, displaced, or newly created?
+- How can cognitive pathways be represented, traced, audited, and reconstructed?
 
-## Why MCP Matters
+## Research Programs
 
-MCP lets AI agents call local tools through a structured interface. Dental Case Packet MCP exposes build, validate, summarize, supported-format, and PHI-risk tools so agent workflows can use dental context safely while keeping patient data local.
+1. Clinical Cognition Transformation  
+   Study how diagnostic framing, uncertainty, recommendations, mechanisms, and responsibilities change across healthcare systems.
 
-```text
-Dental Records
-↓
-Dental Case Packet
-↓
-MCP Layer
-↓
-AI Agents
-```
+2. Cognitive Reconstruction  
+   Study whether prior cognition can be reconstructed from downstream artifacts such as referral letters, consultation notes, treatment plans, clinical documentation, and longitudinal records.
 
-## What This Project Is Not
+3. Human-AI Co-Cognition  
+   Study hybrid cognitive systems in which humans and AI jointly produce clinical interpretation, recommendation, explanation, or action.
 
-- It is not a dental chatbot.
-- It is not an AI diagnostic model.
-- It does not diagnose.
-- It does not recommend treatment.
-- It does not claim clinical accuracy.
+4. Cognitive Provenance  
+   Study how cognitive pathways can be represented, traced, audited, compared, and understood.
 
-Every output is for dentist review and clinical review workflows only.
+5. Longitudinal Cognitive Change  
+   Study how clinician cognition evolves as AI becomes embedded into daily practice.
 
-## Who It Is For
+## Project Evolution
 
-- Dental teams preparing records for structured review.
-- Developers building AI workflow infrastructure for dentistry.
-- AI product teams that need privacy-first dental context packets.
-- Researchers exploring open dental data interoperability patterns without diagnostic claims.
+This repository evolved through a sequence of increasingly broad research framings:
 
-## 30-Second Quickstart
+AI-ready Dental Case Packet  
+-> Dental Context Specification (DCS)  
+-> Reasoning Decay  
+-> Clinical Reasoning Reconstruction  
+-> Human-AI Co-Reasoning  
+-> Clinical Reasoning Transformation  
+-> Clinical Cognition Transformation
 
-```bash
-git clone https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet.git
-cd ai-ready-dental-case-packet
+The dental packet and dental imaging work were early domain-specific infrastructure experiments. They helped reveal a broader problem: the important question was not only how to package dental data for AI, but how clinical cognition changes when intelligence becomes distributed across people, machines, documents, institutions, and patients.
 
-python -m venv .venv
-source .venv/bin/activate
-pip install -e ".[dev]"
+## Role of DCS
 
-python -m dental_packet build --input ./examples/sample_input --output ./case_packet_output
-python -m dental_packet validate --input ./case_packet_output/case_packet.json
-```
+DCS is no longer the central project.
 
-Expected output:
+DCS is now best understood as a possible cognitive provenance representation layer. It may help encode clinical context, reasoning traces, transformations, uncertainty, and workflow transitions. It remains valuable as a downstream representation experiment, especially because this repository contains historical specification work, schemas, examples, and validation-oriented research materials.
 
-```text
-Built case packet: case_packet_output/case_packet.json
-case_packet.json is valid
-```
+The primary research question is broader than DCS.
 
-Generated files:
+## Current Repository Status
 
-```text
-case_packet_output/case_packet.json
-case_packet_output/case_packet.md
-case_packet_output/manifest.json
-case_packet_output/files_index.json
-case_packet_output/deidentified/
-case_packet_output/logs/
-```
-
-## Supported Inputs
-
-- CBCT DICOM: `cbct/*.dcm`
-- Dental X-ray DICOM or image files: `xray/*.dcm`, `xray/*.jpg`, `xray/*.png`
-- Intraoral scans: `intraoral_scan/*.stl`, `intraoral_scan/*.ply`, `intraoral_scan/*.obj`
-- Dental photos: `photos/*.jpg`, `photos/*.png`
-- Patient demographic input: `patient_info.json`
-- Narrative records: `chief_complaint.txt`, `clinical_notes.txt`, `treatment_plan.txt`
-
-## Outputs
-
-- `case_packet.json`: structured Dental Case Packet.
-- `case_packet.md`: human-readable report for review.
-- `manifest.json`: source file manifest with SHA-256 hashes.
-- `files_index.json`: compact file index.
-- `deidentified/`: de-identified copies of supported text and JSON inputs.
-- `logs/`: pipeline warnings, including PHI field detections without raw PHI values.
-
-## Safety Boundaries
-
-- No diagnosis.
-- No treatment recommendations.
-- No clinical accuracy claims.
-- PHI-safe metadata handling by default.
-- Large imaging and scan files are referenced, not embedded in `case_packet.json`.
-- AI-facing context is marked for clinical review only.
-
-## Non-Diagnostic Disclaimer
-
-This project only transforms dental records into structured context. It is not a medical device, diagnostic system, or treatment planning engine. Generated packets must be reviewed by qualified dental professionals before any clinical use.
+This repository is being reframed from a dental AI infrastructure and DCS-centered project into the Clinical Cognition Transformation Lab.
 
-## Specification First
-
-This repository should be read like an infrastructure specification project:
-
-- `spec/` contains normative specification artifacts.
-- `rfcs/` contains design proposals and compatibility decisions.
-- `examples/case_packets/` contains versioned example packets.
-- `src/dental_packet/` is a reference implementation, not the product itself.
-
-For a more detailed walkthrough, see [docs/quickstart.md](docs/quickstart.md).
+Existing DCS, dental reasoning, case reconstruction, and synthetic workflow materials are preserved as origins and research artifacts. They should be read as historical substrate and experimental infrastructure for studying Human-AI Clinical Cognition, not as the sole mission of the repository.
 
-## Design Principles
+Package names, schema names, and paths that still contain DCS or dental terminology are retained where changing them would obscure history or break existing materials.
 
-- Do not diagnose.
-- Do not generate treatment recommendations.
-- Do not claim clinical accuracy.
-- Only transform data into structured context.
-- Make every output suitable for dentist review.
-- Use privacy-first architecture.
-- De-identify by default.
-- Keep the project open-source friendly.
+## Future Directions
 
-Every AI-facing output must be treated as **for clinical review only**.
+CCTL will develop studies, methods, and representations for:
 
-## Why Dentistry Needs An AI-Native Data Layer
+- distributed human-AI clinical cognitive systems;
+- cognitive provenance;
+- cognitive reconstruction from clinical artifacts;
+- longitudinal change in clinician expertise;
+- human-AI co-cognition in real workflows;
+- future clinical expertise in AI-embedded healthcare.
 
-Dental cases often arrive as scattered CBCT DICOM studies, panoramic X-rays, periapical X-rays, intraoral scans, photos, clinical notes, chief complaints, and treatment plans. LLM workflows work better when those records are organized into predictable references, normalized metadata, de-identified summaries, file indexes, and safety disclaimers.
+## Founding Statement
 
-This project creates the Dental Case Packet: a standardized context object that can be consumed by:
+Clinical cognition is no longer exclusively an individual cognitive activity.
 
-- GPT
-- Claude
-- Gemini
-- OpenAI Agents
-- dental copilots
-- clinical review systems
-- future dental foundation models
+It is increasingly a distributed process emerging from interactions among clinicians, AI systems, documentation artifacts, institutions, and patients.
 
-Think of the long-term direction as **DICOM + FHIR + LangChain for dentistry**.
+The scientific challenge is no longer understanding clinical reasoning alone.
 
-## Repository Map
+The scientific challenge is understanding how clinical cognition transforms within distributed human-AI systems.
 
-```text
-.github/workflows/
-  ci.yml
-docs/
-  quickstart.md
-  architecture-review.md
-  roadmap.md
-  packet-spec.md
-spec/
-  dental-case-packet-v0.1.md
-  dental-case-packet.schema.json
-  validation-rules.md
-  versioning.md
-  compatibility.md
-  fhir-interoperability.md
-rfcs/
-  0001-dental-case-packet-v0.1.md
-  0002-privacy-first-packet-generation.md
-  0003-fhir-interoperability-design.md
-examples/
-  case_packets/
-    minimal-v0.1.json
-    imaging-rich-v0.1.json
-  sample_input/
-  sample_output/
-src/dental_packet/
-  reference implementation CLI
-```
-
-## Reference Implementation
-
-The Python package in `src/dental_packet/` is the v0.1 reference implementation for the Dental Case Packet Specification. It is intentionally local-first and deterministic.
-
-### Install
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -e ".[dev]"
-```
-
-### CLI Usage
-
-Build a packet:
-
-```bash
-python -m dental_packet build --input ./examples/sample_input --output ./case_packet_output
-```
-
-Validate a generated packet:
-
-```bash
-python -m dental_packet validate --input ./case_packet_output/case_packet.json
-```
-
-### Developer Checks
-
-```bash
-ruff check .
-pytest
-python -m dental_packet build --input ./examples/sample_input --output ./case_packet_output
-python -m dental_packet validate --input ./case_packet_output/case_packet.json
-```
-
-## Local MCP Server
-
-This project can now be used as an MCP-compatible local tool layer for AI agents. The MCP server exposes Dental Case Packet operations as local tools for structured data transformation.
-
-Patient data can remain local. The MCP server does not send patient data to external APIs, does not diagnose, and does not recommend treatment.
-
-Install the MCP optional dependencies:
-
-```bash
-pip install -e ".[mcp]"
-```
-
-Run the MCP server:
-
-```bash
-python -m dental_packet_mcp
-```
-
-The server exposes tools for:
-
-- `build_dental_case_packet`: build a Dental Case Packet from an input folder.
-- `validate_case_packet`: validate a generated `case_packet.json`.
-- `summarize_packet`: return a non-diagnostic packet summary.
-- `list_supported_formats`: list supported file formats.
-- `check_phi_risk`: check obvious PHI risk without printing PHI values.
-
-See [docs/mcp-server.md](docs/mcp-server.md) and [examples/mcp_agent_example.py](examples/mcp_agent_example.py).
-
-## v0.1 Release Checklist
-
-- [x] Install works with `pip install -e ".[dev]"`.
-- [x] Build command works.
-- [x] Validate command works.
-- [x] Sample input exists.
-- [x] Sample output exists.
-- [x] Tests pass.
-- [x] PHI fields are not exported.
-- [x] `case_packet.json` follows the schema.
-- [x] Manifest includes SHA-256 hashes.
-- [x] Markdown report is generated.
-- [x] GitHub Actions CI runs ruff, pytest, build, and validate.
-- [x] Changelog exists.
-- [x] Quickstart docs exist.
-
-## Infrastructure Layers
-
-```mermaid
-flowchart TD
-  A["Layer 1: Data Ingestion<br/>DICOM, STL, PLY, OBJ, JPG, PNG, TXT, PDF"] --> B["Layer 2: Normalization<br/>standard metadata"]
-  B --> C["Layer 3: De-identification<br/>PHI removal by default"]
-  C --> D["Layer 4: Dental Context Builder<br/>structured case representation"]
-  D --> E["Layer 5: AI-ready Case Packet<br/>portable JSON format"]
-  E --> F["Layer 6: LLM Connectors<br/>OpenAI, Anthropic, Gemini"]
-  F --> G["Layer 7: Future Agent Layer<br/>dental agents, copilots, review workflows"]
-```
-
-## Input Structure
-
-```text
-project-input/
-  patient_info.json
-  chief_complaint.txt
-  clinical_notes.txt
-  treatment_plan.txt
-  cbct/
-    *.dcm
-  xray/
-    *.dcm or *.jpg or *.png
-  intraoral_scan/
-    *.stl or *.ply or *.obj
-  photos/
-    *.jpg or *.png
-```
-
-## Output Structure
-
-```text
-case_packet_output/
-  case_packet.json
-  case_packet.md
-  manifest.json
-  files_index.json
-  deidentified/
-  thumbnails/
-  logs/
-```
-
-## Supported Formats
-
-- CBCT and X-ray DICOM: `.dcm`
-- X-ray images and photos: `.jpg`, `.jpeg`, `.png`
-- Intraoral scans: `.stl`, `.ply`, `.obj`
-- Narrative records: `.txt`
-- Patient demographic input: `patient_info.json`
-- PDF support is planned in the ingestion layer.
-
-## Privacy And Safety
-
-The MVP uses allowlist-based de-identification. `patient_info.json` only retains `age` and `sex`. Text files are copied into `deidentified/` with common emails, phone numbers, and dates redacted. DICOM metadata output only includes a narrow non-sensitive allowlist:
-
-- `Modality`
-- `StudyDate`
-- `SeriesDescription`
-- `Manufacturer`
-- `SliceThickness`
-- `PixelSpacing`
-- `Rows`
-- `Columns`
-
-If PHI-like DICOM fields such as `PatientName`, `PatientID`, `PatientBirthDate`, `PatientAddress`, or institution fields are detected, the pipeline logs the field name but never exports the original value.
-
-## Non-Medical Diagnosis Statement
-
-This project is for data organization, de-identification, format conversion, indexing, summarization, and structuring. It is not for automatic diagnosis and does not generate treatment advice. All packet content and AI outputs are for clinical review only and require dentist review.
-
-## Specification And Architecture
-
-- [Dental Case Packet Specification v0.1](spec/dental-case-packet-v0.1.md)
-- [JSON Schema](spec/dental-case-packet.schema.json)
-- [Validation Rules](spec/validation-rules.md)
-- [Versioning Strategy](spec/versioning.md)
-- [Compatibility Strategy](spec/compatibility.md)
-- [FHIR Interoperability Design](spec/fhir-interoperability.md)
-- [Dental Case Packet Specification v0.1](docs/packet-spec.md)
-- [Architecture Review](docs/architecture-review.md)
-- [Roadmap](docs/roadmap.md)
-
-## Development
-
-```bash
-ruff check .
-pytest
-```
-
-## Open Source
-
-This repository currently uses the MIT License for low-friction adoption. See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before contributing.
-
-For infrastructure vendors and clinical teams who need explicit patent protection, Apache-2.0 may become the better long-term license. The license tradeoff is documented in [CONTRIBUTING.md](CONTRIBUTING.md).
+CCTL exists to study that transformation.

@@ -1,68 +1,29 @@
 # Roadmap
 
-## v0.1 Case Packet Builder
+## Near Term
 
-- Local CLI.
-- Folder-based ingestion.
-- File manifest and SHA-256 indexing.
-- DICOM metadata allowlist.
-- STL, PLY, OBJ mesh metadata.
-- Basic de-identification.
-- Markdown report.
-- Pydantic validation.
+- Complete the CCTL repository reframing.
+- Maintain DCS and dental packet materials as historical and experimental substrate.
+- Consolidate terminology around Human-AI Clinical Cognition, Clinical Cognition Transformation, Cognitive Provenance, Cognitive Reconstruction, Longitudinal Cognitive Change, and Human-AI Co-Cognition.
+- Prepare the primary article: "Clinical Cognition Transformation: Studying Human-AI Clinical Cognition in Distributed Healthcare Systems."
 
-## v0.2 DICOM Thumbnail Service
+## Research Development
 
-- Generate safe thumbnails from DICOM and image records.
-- Detect and warn about burned-in annotations.
-- Keep thumbnails separate from packet JSON.
-- Add thumbnail provenance metadata.
+- Refine the taxonomy of clinical cognition transformations.
+- Extend published case reconstruction methods.
+- Define artifact-pair protocols for real workflow studies.
+- Convert DCS concepts into candidate cognitive provenance representation experiments.
+- Develop longitudinal study designs for AI-embedded clinical expertise.
 
-## v0.3 Treatment Plan Parser
+## Repository Development
 
-- Parse clinician-provided plans into structured sections.
-- Preserve original intent without generating recommendations.
-- Add treatment plan diff support for versioned plans.
+- Keep existing schemas and examples stable unless there is a clear reason to revise them.
+- Add crosswalks from legacy DCS terminology to CCTL concepts.
+- Separate normative specification artifacts from research-program artifacts.
+- Create reviewer-facing summaries for publication and grant use.
 
-## v0.4 Dental Context Builder
+## Long Term
 
-- Separate context construction from CLI orchestration.
-- Add provenance to every generated context field.
-- Add deterministic missing-information detection.
-- Introduce structured warning codes.
-
-## v0.5 FHIR Mapping
-
-- Map packet fields to relevant FHIR resources where possible.
-- Document dentistry-specific gaps in FHIR.
-- Add export adapters for clinical interoperability.
-
-## v0.6 OpenAI Connector
-
-- Optional connector for OpenAI models.
-- Non-diagnostic prompt templates.
-- Redaction guardrails before request creation.
-- Strict "for clinical review only" output framing.
-
-## v0.7 Dental RAG
-
-- Chunk clinical notes, plans, and metadata.
-- Add retrieval contracts for packet sections.
-- Support local vector stores.
-- Avoid using RAG to generate diagnosis or treatment recommendations.
-
-## v0.8 Dental Agent SDK
-
-- Review workflow primitives.
-- Task handoff to dentists.
-- Audit trail for agent actions.
-- Tool contracts for future clinical copilots.
-
-## v1.0 AI-native Dental Infrastructure Platform
-
-- Stable Dental Case Packet Specification.
-- Versioned JSON Schema.
-- Plugin ecosystem for PMS, lab, imaging, and LLM connectors.
-- Privacy profiles for HIPAA, GDPR, and Taiwan workflows.
-- Production-ready CLI and library APIs.
-
+- Establish CCTL as a research program on distributed Human-AI Clinical Cognition.
+- Build empirical evidence across synthetic simulations, published case reconstruction, real workflow artifact studies, and longitudinal human-AI cognitive studies.
+- Develop representation, audit, and evaluation methods for cognitive provenance in healthcare.

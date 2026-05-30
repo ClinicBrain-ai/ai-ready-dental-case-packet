@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "dental-packet"
 version = "0.1.3"
-description = "Local-first Dental Context Layer for AI Agents and MCP workflows."
+description = "Historical dental packet infrastructure for CCTL human-AI clinical cognition research."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
@@ -21,6 +21,9 @@ keywords = [
   "ai-agents",
   "healthcare-ai",
   "dental-ai",
+  "clinical-cognition",
+  "human-ai-systems",
+  "cognitive-provenance",
   "llm",
   "context-layer",
 ]
