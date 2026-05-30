@@ -44,3 +44,15 @@ Second-review eligibility verification has been performed. This step still does 
 - [Abstraction readiness memo](abstraction-readiness-memo.md)
 
 Abstraction may proceed only for cases marked appropriate after review and must follow the citation-only, paraphrased educational abstraction safeguards.
+
+## Dataset v0.2.1 Revised Shortlist and Abstraction Batch
+
+Dataset v0.2.1 accepts the second-review shortlist revision. CAND-014 was replaced by CAND-016 before abstraction planning.
+
+No case abstraction has been performed yet, no case text has been copied, and no patient-identifying information has been added. Abstraction may proceed only using the safeguards checklist and output template.
+
+- [Revised shortlist v0.2.1](revised-shortlist-v0.2.1.md)
+- [Abstraction batch v0.2.1](abstraction-batch-v0.2.1.md)
+- [Abstraction safeguards checklist](abstraction-safeguards-checklist.md)
+- [Abstraction output template](abstraction-output-template.md)
+- [Pre-abstraction review memo](pre-abstraction-review-memo.md)
