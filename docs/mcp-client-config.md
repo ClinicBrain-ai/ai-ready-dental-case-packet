@@ -1,5 +1,7 @@
 # MCP Client Configuration
 
+> Historical note: This document is a legacy DCS / dental packet infrastructure artifact from the project's earlier phase. The current primary repository identity is Clinical Cognition Transformation Lab (CCTL), which studies how clinical cognition transforms in distributed human-AI healthcare systems. This file is preserved for historical and technical context, not as the current primary mission statement.
+
 This project exposes a local MCP server for Dental Case Packet workflows.
 
 The server is local-first and privacy-first. It does not send patient data to external APIs, does not diagnose, and does not recommend treatment.

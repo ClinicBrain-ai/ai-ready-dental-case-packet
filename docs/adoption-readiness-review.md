@@ -1,5 +1,7 @@
 # Adoption Readiness Review
 
+> Historical note: This document is a legacy DCS / dental packet infrastructure artifact from the project's earlier phase. The current primary repository identity is Clinical Cognition Transformation Lab (CCTL), which studies how clinical cognition transforms in distributed human-AI healthcare systems. This file is preserved for historical and technical context, not as the current primary mission statement.
+
 This review evaluates readiness for discovery, installation, and adoption by AI agents, package managers, MCP registries, and future agent marketplaces.
 
 Scores are 1-10, where 10 means ready for broad public adoption.

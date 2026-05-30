@@ -1,5 +1,7 @@
 # Architecture Review
 
+> Historical note: This document is a legacy DCS / dental packet infrastructure artifact from the project's earlier phase. The current primary repository identity is Clinical Cognition Transformation Lab (CCTL), which studies how clinical cognition transforms in distributed human-AI healthcare systems. This file is preserved for historical and technical context, not as the current primary mission statement.
+
 ## Executive Summary
 
 `ai-ready-dental-case-packet` is currently a working local CLI that builds a de-identified Dental Case Packet from a folder of dental records. It is intentionally conservative: it does not diagnose, does not recommend treatment, and only transforms available data into structured context for dentist review.
@@ -164,4 +166,3 @@ dental_packet/
 - Clinical accuracy claims.
 - Replacing dentist review.
 - Training a dental foundation model inside this repository.
-

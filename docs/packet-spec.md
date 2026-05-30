@@ -1,5 +1,7 @@
 # Dental Case Packet Specification v0.1
 
+> Historical note: This document is a legacy DCS / dental packet infrastructure artifact from the project's earlier phase. The current primary repository identity is Clinical Cognition Transformation Lab (CCTL), which studies how clinical cognition transforms in distributed human-AI healthcare systems. This file is preserved for historical and technical context, not as the current primary mission statement.
+
 Status: Draft  
 Scope: AI-ready dental data context for clinical review  
 Clinical status: Non-diagnostic, not treatment advice
@@ -169,4 +171,3 @@ Until v1.0, the packet format is draft and may change. After v1.0:
 - additive fields should be minor version changes
 - renamed or removed fields should require a major version change
 - validators should reject unknown fields only for strict-mode workflows
-

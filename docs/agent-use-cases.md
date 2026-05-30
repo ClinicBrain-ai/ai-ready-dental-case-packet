@@ -1,5 +1,7 @@
 # Agent Use Cases
 
+> Historical note: This document is a legacy DCS / dental packet infrastructure artifact from the project's earlier phase. The current primary repository identity is Clinical Cognition Transformation Lab (CCTL), which studies how clinical cognition transforms in distributed human-AI healthcare systems. This file is preserved for historical and technical context, not as the current primary mission statement.
+
 This document shows safe, local-first workflows for AI agents using the Dental Case Packet project.
 
 Agents must not diagnose, recommend treatment, interpret imaging clinically, upload patient data, or print raw PHI values.

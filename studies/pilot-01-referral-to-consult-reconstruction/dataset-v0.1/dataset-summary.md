@@ -2,6 +2,8 @@
 
 Synthetic educational dataset for Pilot 1: Referral-to-Consult Reconstruction.
 
+Dataset v0.1 contains fictional educational cases only. No real patient data or identifiable information is included. The dataset is not clinical guidance and should not be used for patient care.
+
 No cases describe real patients. No identifiable information is included.
 
 ## Case Distribution

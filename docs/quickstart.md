@@ -1,5 +1,7 @@
 # Quickstart
 
+> Historical note: This document is a legacy DCS / dental packet infrastructure artifact from the project's earlier phase. The current primary repository identity is Clinical Cognition Transformation Lab (CCTL), which studies how clinical cognition transforms in distributed human-AI healthcare systems. This file is preserved for historical and technical context, not as the current primary mission statement.
+
 This guide builds and validates a Dental Case Packet from the included sample files.
 
 The reference implementation is local-first. It does not call an LLM API, diagnose, recommend

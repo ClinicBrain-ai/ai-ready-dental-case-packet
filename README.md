@@ -10,6 +10,12 @@ CCTL exists to study this transformation as a scientific object in its own right
 
 The lab originated in dental AI infrastructure work, including the AI-ready Dental Case Packet and the Dental Context Specification (DCS). Those projects remain important origins and downstream artifacts, but they are no longer the organizing center of this repository.
 
+## Latest Research Output
+
+CCTL has completed a first synthetic feasibility study: [Research Note 001: Synthetic Referral-to-Consult Reconstruction Feasibility Study](research-notes/001-synthetic-referral-consult-reconstruction-feasibility.md). Dataset v0.1 contains 10 fictional educational referral-consult pairs, and the first coding pass tested whether the reconstruction workflow produces interpretable outputs.
+
+Dataset v0.1 uses fictional educational cases only. It is not clinical guidance, not patient-care advice, and not evidence of real-world clinical frequency or validity.
+
 ## Core Thesis
 
 Clinical cognition is no longer exclusively an individual cognitive activity. It is increasingly a distributed process emerging from interactions among clinicians, AI systems, documentation artifacts, institutions, and patients.

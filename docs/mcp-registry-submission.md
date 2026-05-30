@@ -1,5 +1,7 @@
 # MCP Registry Submission Preparation
 
+> Historical note: This document is a legacy DCS / dental packet infrastructure artifact from the project's earlier phase. The current primary repository identity is Clinical Cognition Transformation Lab (CCTL), which studies how clinical cognition transforms in distributed human-AI healthcare systems. This file is preserved for historical and technical context, not as the current primary mission statement.
+
 The MCP Registry is the discovery layer for publicly accessible MCP servers. Current official documentation describes it as a centralized metadata repository that stores standardized `server.json` metadata, including a unique server name, package location, execution instructions, and server capabilities.
 
 Sources reviewed:

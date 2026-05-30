@@ -1,5 +1,7 @@
 # Quick Agent Install
 
+> Historical note: This document is a legacy DCS / dental packet infrastructure artifact from the project's earlier phase. The current primary repository identity is Clinical Cognition Transformation Lab (CCTL), which studies how clinical cognition transforms in distributed human-AI healthcare systems. This file is preserved for historical and technical context, not as the current primary mission statement.
+
 This guide shows how to install and configure Dental Case Packet MCP for local AI agent workflows.
 
 The server is local-first. It does not upload patient data, diagnose, recommend treatment, or interpret imaging clinically.

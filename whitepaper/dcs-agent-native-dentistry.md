@@ -1,5 +1,7 @@
 # Dental Context Specification: A Minimal Claim Provenance Layer for Dental Agent Handoffs
 
+> Historical note: This document is a legacy DCS / dental packet infrastructure artifact from the project's earlier phase. The current primary repository identity is Clinical Cognition Transformation Lab (CCTL), which studies how clinical cognition transforms in distributed human-AI healthcare systems. This file is preserved for historical and technical context, not as the current primary mission statement.
+
 ## Abstract
 
 Dental artificial intelligence is moving from isolated model outputs toward networks of specialized agents that observe, reason, verify, communicate, and coordinate care. Existing standards and systems represent important parts of the clinical environment: DICOM represents imaging objects, FHIR represents broad healthcare resources, OpenAPI describes service interfaces, and emerging agent protocols connect agents to tools and to one another. None of these, by themselves, define the minimal dental claim provenance artifact needed to preserve semantic accountability when one agent relies on another agent's output.

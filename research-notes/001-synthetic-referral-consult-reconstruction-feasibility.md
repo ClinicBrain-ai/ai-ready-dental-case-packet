@@ -1,5 +1,7 @@
 # Research Note 001: Synthetic Referral-to-Consult Reconstruction Feasibility Study
 
+This research note is based on fictional educational cases. It is a workflow feasibility exercise only. It is not clinical guidance, patient-care advice, or evidence of real-world clinical validity.
+
 ## Summary
 
 This note summarizes the first proof-of-concept coding pass for Pilot 1: Referral-to-Consult Cognition Reconstruction. The study used a synthetic educational dataset of 10 fictional referral-consult pairs to test whether the CCTL reconstruction workflow can produce interpretable outputs.

@@ -1,5 +1,7 @@
 # Project Positioning
 
+> Historical note: This document is a legacy DCS / dental packet infrastructure artifact from the project's earlier phase. The current primary repository identity is Clinical Cognition Transformation Lab (CCTL), which studies how clinical cognition transforms in distributed human-AI healthcare systems. This file is preserved for historical and technical context, not as the current primary mission statement.
+
 ClinicBrain is building AI-native dental data infrastructure.
 
 `ai-ready-dental-case-packet` is the first open reference project for transforming dental records into structured, privacy-first Dental Case Packets that can support clinical review and AI workflow systems.

@@ -1,5 +1,7 @@
 # LinkedIn Post
 
+> Historical note: This document is a legacy DCS / dental packet infrastructure artifact from the project's earlier phase. The current primary repository identity is Clinical Cognition Transformation Lab (CCTL), which studies how clinical cognition transforms in distributed human-AI healthcare systems. This file is preserved for historical and technical context, not as the current primary mission statement.
+
 We are building the Dental Context Layer for AI Agents.
 
 The problem: dental records are not naturally LLM-ready.
