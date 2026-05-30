@@ -33,3 +33,14 @@ Dataset v0.2 candidate source selection has begun. No source text has been copie
 - [Source-selection memo](source-selection-memo.md)
 
 Selected cases still require abstraction and second-review before coding.
+
+## Second-Review Eligibility Verification
+
+Second-review eligibility verification has been performed. This step still does not create case abstractions, no case text has been copied, and no patient-identifying information has been added.
+
+- [Second-review eligibility verification](second-review-eligibility-verification.md)
+- [Second-review shortlist decision](second-review-shortlist-decision.md)
+- [Source risk matrix](source-risk-matrix.md)
+- [Abstraction readiness memo](abstraction-readiness-memo.md)
+
+Abstraction may proceed only for cases marked appropriate after review and must follow the citation-only, paraphrased educational abstraction safeguards.
