@@ -8,8 +8,12 @@ The abstractions are educational methodology artifacts. They are not real clinic
 
 Human review is required before coding. The coding gate remains closed until the review forms and coding-gate decision record are completed.
 
+Begin with the [human review handoff](human-review-handoff.md). A GitHub issue body is also available as a draft in [github-issue-draft.md](github-issue-draft.md); do not create the issue unless explicitly requested.
+
 ## Review Materials
 
+- [Human review handoff](human-review-handoff.md)
+- [GitHub issue draft](github-issue-draft.md)
 - [Reviewer instructions](reviewer-instructions.md)
 - [Source-distance checklist](source-distance-checklist.md)
 - [Privacy and identifiability checklist](privacy-identifiability-checklist.md)
