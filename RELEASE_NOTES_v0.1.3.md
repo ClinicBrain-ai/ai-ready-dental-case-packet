@@ -19,8 +19,8 @@ The project remains local-first, privacy-first, and dentist-review-only. It does
 
 ### Clean Wheel Install Validation
 
-- Built `dental_packet-0.1.2.tar.gz`.
-- Built `dental_packet-0.1.2-py3-none-any.whl`.
+- Built `dental_packet-0.1.3.tar.gz`.
+- Built `dental_packet-0.1.3-py3-none-any.whl`.
 - Installed the wheel into a clean temporary virtual environment.
 - Verified:
   - `dental-packet --help`

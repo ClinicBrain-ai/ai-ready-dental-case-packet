@@ -198,13 +198,13 @@ The current public examples do not define universal top-level fields for command
     "url": "https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet",
     "source": "github"
   },
-  "version": "0.1.2",
+  "version": "0.1.3",
   "packages": [
     {
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
       "identifier": "dental-packet",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
