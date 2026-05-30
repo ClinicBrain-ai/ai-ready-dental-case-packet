@@ -7,6 +7,23 @@
 - Consolidate terminology around Human-AI Clinical Cognition, Clinical Cognition Transformation, Cognitive Provenance, Cognitive Reconstruction, Longitudinal Cognitive Change, and Human-AI Co-Cognition.
 - Prepare the primary article: "Clinical Cognition Transformation: Studying Human-AI Clinical Cognition in Distributed Healthcare Systems."
 
+Completed near-term milestones:
+
+- CCTL paper structure created.
+- Three initial paper drafts created.
+- Three pilot studies defined.
+- Pilot 1 operationalized.
+- Dataset v0.1 created.
+- First coding pass completed.
+- First feasibility research note created.
+
+Next near-term milestones:
+
+- Dataset v0.2 using published educational cases.
+- Second-coder reliability workflow.
+- Refinement of compression versus uncertainty-loss coding rules.
+- First short manuscript or preprint based on Pilot 1.
+
 ## Research Development
 
 - Refine the taxonomy of clinical cognition transformations.

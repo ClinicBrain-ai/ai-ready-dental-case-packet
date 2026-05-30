@@ -51,6 +51,23 @@ The central questions are:
 5. Longitudinal Cognitive Change  
    Study how clinician cognition evolves as AI becomes embedded into daily practice.
 
+## Repository Map
+
+- [Manifesto](docs/manifesto.md)
+- [Research Agenda](docs/research-agenda.md)
+- [Research Programs](docs/research-programs.md)
+- [Papers](papers/)
+- [Pilot Studies](studies/)
+- [Methods](methods/)
+- [Research Notes](research-notes/)
+- [Pilot 1: Referral-to-Consult Reconstruction](studies/pilot-01-referral-to-consult-reconstruction/)
+- [Pilot 1 Dataset v0.1](studies/pilot-01-referral-to-consult-reconstruction/dataset-v0.1/)
+- [Pilot 1 Analysis v0.1](studies/pilot-01-referral-to-consult-reconstruction/analysis-v0.1/)
+- [Project Evolution](docs/project-evolution.md)
+- [Role of DCS](docs/dcs-role.md)
+- [Roadmap](docs/roadmap.md)
+- [Founding Statement](docs/founding-statement.md)
+
 ## Project Evolution
 
 This repository evolved through a sequence of increasingly broad research framings:
