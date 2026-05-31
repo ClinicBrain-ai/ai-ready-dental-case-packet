@@ -37,3 +37,12 @@ A human-review handoff packet has been prepared for reviewing the `ABS-001` and 
 - [Post-coding review handoff](post-coding-review-v0.2.6/post-coding-review-handoff.md)
 - [Reviewer instructions](post-coding-review-v0.2.6/reviewer-instructions.md)
 - [Post-coding gate decision template](post-coding-review-v0.2.6/post-coding-gate-decision-template.md)
+- [Post-coding human review decision v0.2.6](post-coding-review-v0.2.6/post-coding-human-review-decision-v0.2.6.md)
+
+## Post-Coding Review Decision v0.2.6
+
+The human review decision accepts the `ABS-001` and `ABS-002` coding outputs for dry-run purposes with caution.
+
+Gate status: `open for 2 additional cases only`.
+
+The remaining 8 candidates are not opened as a full batch. Research Note 002 remains prohibited. No clinical validation or clinical guidance is implied.

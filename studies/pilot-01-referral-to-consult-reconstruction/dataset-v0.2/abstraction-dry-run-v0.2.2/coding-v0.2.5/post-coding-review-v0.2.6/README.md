@@ -13,9 +13,12 @@ The review is limited to `ABS-001` and `ABS-002` coding outputs. It is not codin
 - [Cross-case review form](cross-case-review-form.md)
 - [Post-coding gate decision template](post-coding-gate-decision-template.md)
 - [GitHub issue draft](github-issue-draft.md)
+- [Post-coding human review decision v0.2.6](post-coding-human-review-decision-v0.2.6.md)
 
 ## Current Gate Status
 
-Post-coding gate status remains `closed pending post-coding review`.
+Post-coding review decision has been recorded.
 
-The remaining 8 candidates remain on hold until this review is complete and a documented gate decision is made.
+Gate status: `open for 2 additional cases only`.
+
+The remaining 8 candidates are not opened as a full batch. Research Note 002 remains prohibited until a later decision explicitly authorizes it.
