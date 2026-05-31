@@ -46,3 +46,12 @@ Limited reconstruction coding has been completed for `ABS-001` and `ABS-002` onl
 - [Coding memo](coding-v0.2.5/coding-memo.md)
 - [Limited dry-run boundaries](coding-v0.2.5/limited-boundaries.md)
 - [Post-coding review gate](coding-v0.2.5/post-coding-review-gate.md)
+
+## Post-Coding Review Handoff v0.2.6
+
+A post-coding review handoff packet has been prepared so a human reviewer can evaluate the `ABS-001` and `ABS-002` coding outputs before any second-coder repeat or expansion. The post-coding gate remains closed pending review.
+
+- [Post-coding review handoff README](coding-v0.2.5/post-coding-review-v0.2.6/README.md)
+- [Post-coding review handoff](coding-v0.2.5/post-coding-review-v0.2.6/post-coding-review-handoff.md)
+- [Reviewer instructions](coding-v0.2.5/post-coding-review-v0.2.6/reviewer-instructions.md)
+- [Post-coding gate decision template](coding-v0.2.5/post-coding-review-v0.2.6/post-coding-gate-decision-template.md)

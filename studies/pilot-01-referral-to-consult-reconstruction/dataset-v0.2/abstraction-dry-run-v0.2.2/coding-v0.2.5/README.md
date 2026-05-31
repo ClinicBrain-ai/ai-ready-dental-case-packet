@@ -21,9 +21,19 @@ No source case text was inspected, copied, quoted, or used during coding. No add
 - [Limited dry-run boundaries](limited-boundaries.md)
 - [Post-coding review checklist](post-coding-review-checklist.md)
 - [Post-coding review gate](post-coding-review-gate.md)
+- [Post-coding review handoff v0.2.6](post-coding-review-v0.2.6/README.md)
 
 ## Status
 
 The limited dry-run coding is complete for two abstractions only. The remaining 8 candidates remain on hold until these coding results are reviewed.
 
 Post-coding gate status: `closed pending post-coding review`.
+
+## Post-Coding Review Handoff v0.2.6
+
+A human-review handoff packet has been prepared for reviewing the `ABS-001` and `ABS-002` coding outputs before any expansion.
+
+- [Review handoff README](post-coding-review-v0.2.6/README.md)
+- [Post-coding review handoff](post-coding-review-v0.2.6/post-coding-review-handoff.md)
+- [Reviewer instructions](post-coding-review-v0.2.6/reviewer-instructions.md)
+- [Post-coding gate decision template](post-coding-review-v0.2.6/post-coding-gate-decision-template.md)
