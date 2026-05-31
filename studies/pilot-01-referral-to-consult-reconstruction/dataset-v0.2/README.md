@@ -69,3 +69,15 @@ The dry-run abstractions are paraphrased educational artifacts only. They are no
 - [Safeguards compliance log](abstraction-dry-run-v0.2.2/safeguards-compliance-log.md)
 - [Dry-run quality review](abstraction-dry-run-v0.2.2/dry-run-quality-review.md)
 - [Dry-run memo](abstraction-dry-run-v0.2.2/dry-run-memo.md)
+
+## Dataset v0.2.7 Controlled Next-Step Selection
+
+Dataset v0.2.7 selects exactly 2 additional candidates for the next controlled workflow step: `CAND-010` and `CAND-016`.
+
+This is selection and planning only. No new abstractions have been created, no coding has been performed, the full remaining batch is not open, and Research Note 002 remains prohibited.
+
+- [Controlled next-step selection v0.2.7](controlled-next-step-selection-v0.2.7.md)
+- [Candidate comparison v0.2.7](candidate-comparison-v0.2.7.md)
+- [Safeguards checklist v0.2.7](safeguards-checklist-v0.2.7.md)
+- [Pre-abstraction gate v0.2.7](pre-abstraction-gate-v0.2.7.md)
+- [GitHub issue draft v0.2.7](github-issue-draft-v0.2.7.md)

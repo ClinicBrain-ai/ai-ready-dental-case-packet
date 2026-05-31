@@ -64,3 +64,12 @@ The human review decision keeps the `ABS-001` and `ABS-002` coding outputs for d
 Gate status: `open for 2 additional cases only`.
 
 The remaining 8 candidates are not opened as a full batch. Research Note 002 remains prohibited. This remains a methodological feasibility workflow, not clinical validation or clinical guidance.
+
+## Controlled Next-Step Selection v0.2.7
+
+The controlled next-step selection identifies exactly 2 additional candidates: `CAND-010` and `CAND-016`.
+
+This selection does not create abstractions, does not perform coding, does not open the full remaining batch, and does not authorize Research Note 002.
+
+- [Controlled next-step selection v0.2.7](../controlled-next-step-selection-v0.2.7.md)
+- [Pre-abstraction gate v0.2.7](../pre-abstraction-gate-v0.2.7.md)

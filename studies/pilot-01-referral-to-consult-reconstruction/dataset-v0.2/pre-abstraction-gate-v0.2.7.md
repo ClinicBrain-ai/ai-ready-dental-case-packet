@@ -1,0 +1,60 @@
+# Dataset v0.2.7 Pre-Abstraction Gate
+
+Gate status: `closed pending pre-abstraction review`
+
+This gate controls whether the two selected v0.2.7 candidates may move from selection into limited educational abstraction.
+
+## Scope
+
+Selected candidates:
+
+- `CAND-010`
+- `CAND-016`
+
+This gate applies only to these 2 candidates. It does not open the remaining candidates as a full batch.
+
+## Current Status
+
+The v0.2.7 step is selection and planning only.
+
+No abstraction has begun. No coding has begun. No source case text has been inspected, copied, quoted, or scraped. No patient-identifying information has been added. No clinical guidance has been created.
+
+## Requirements Before Abstraction
+
+Before either selected candidate may be abstracted, a reviewer should confirm:
+
+- the selected candidate remains eligible under `source-eligibility-criteria.md`;
+- the abstraction will use only citation metadata and high-level educational source patterns;
+- source narrative, figures, captions, tables, and distinctive phrasing will not be copied;
+- unnecessary demographic, chronology, institution, location, and treatment-sequence details will be omitted;
+- downstream artifact language will remain non-prescriptive and non-guidance;
+- the resulting abstraction will require human review before any coding.
+
+## Gate Decision Options
+
+Choose one after review:
+
+- [x] remain closed pending pre-abstraction review
+- [ ] open for limited abstraction of `CAND-010` only
+- [ ] open for limited abstraction of `CAND-016` only
+- [ ] open for limited abstraction of `CAND-010` and `CAND-016` only
+- [ ] remain closed; revise selected candidates
+- [ ] remain closed; revise abstraction safeguards before proceeding
+
+## Explicit Non-Authorization
+
+This gate does not authorize:
+
+- abstracting any candidate before review;
+- coding any candidate;
+- opening the remaining candidates as a full batch;
+- modifying `ABS-001.md` or `ABS-002.md`;
+- modifying existing v0.2.5 coding outputs;
+- copying or quoting source case text;
+- scraping source websites;
+- creating clinical guidance;
+- starting Research Note 002.
+
+## Default Next Step
+
+The default next step is pre-abstraction human review of this v0.2.7 package.
