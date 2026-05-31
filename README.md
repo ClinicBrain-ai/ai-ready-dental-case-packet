@@ -74,6 +74,10 @@ The central questions are:
 - [Roadmap](docs/roadmap.md)
 - [Founding Statement](docs/founding-statement.md)
 
+## Status Report
+
+For a consolidated overview of the current repository status, completed work, open questions, and current research boundaries, see [Status Report v1.0](docs/status-report-v1.0.md).
+
 ## Project Evolution
 
 This repository evolved through a sequence of increasingly broad research framings:
