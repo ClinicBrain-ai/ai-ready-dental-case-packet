@@ -33,3 +33,16 @@ Human review was required before coding. The v0.2.4 decision opens the coding ga
 The human review decision has opened the coding gate for `ABS-001` and `ABS-002` only, limited dry-run reconstruction coding only. The remaining 8 candidates remain on hold until dry-run coding results are reviewed.
 
 - [Human review decision v0.2.4](human-review-v0.2.3/human-review-decision-v0.2.4.md)
+
+## Limited Dry-Run Coding v0.2.5
+
+Limited reconstruction coding has been completed for `ABS-001` and `ABS-002` only. This is not full Dataset v0.2 coding, not clinical validation, and not clinical guidance. No source case text was used during coding, and the remaining 8 candidates remain on hold.
+
+- [Coding v0.2.5 README](coding-v0.2.5/README.md)
+- [ABS-001 coding](coding-v0.2.5/case-coding/ABS-001-coding.md)
+- [ABS-002 coding](coding-v0.2.5/case-coding/ABS-002-coding.md)
+- [Results table](coding-v0.2.5/results-table.md)
+- [Transformation summary](coding-v0.2.5/transformation-summary.md)
+- [Coding memo](coding-v0.2.5/coding-memo.md)
+- [Limited dry-run boundaries](coding-v0.2.5/limited-boundaries.md)
+- [Post-coding review gate](coding-v0.2.5/post-coding-review-gate.md)
