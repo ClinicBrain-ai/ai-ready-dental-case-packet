@@ -69,7 +69,8 @@ The remaining 8 candidates are not opened as a full batch. Research Note 002 rem
 
 The controlled next-step selection identifies exactly 2 additional candidates: `CAND-010` and `CAND-016`.
 
-This selection does not create abstractions, does not perform coding, does not open the full remaining batch, and does not authorize Research Note 002.
+The pre-abstraction human review decision authorizes limited educational abstraction of `CAND-010` and `CAND-016` only. This decision-record step does not create abstractions, does not perform coding, does not open the full remaining batch, and does not authorize Research Note 002.
 
 - [Controlled next-step selection v0.2.7](../controlled-next-step-selection-v0.2.7.md)
 - [Pre-abstraction gate v0.2.7](../pre-abstraction-gate-v0.2.7.md)
+- [Pre-abstraction human review decision v0.2.7](../pre-abstraction-human-review-decision-v0.2.7.md)

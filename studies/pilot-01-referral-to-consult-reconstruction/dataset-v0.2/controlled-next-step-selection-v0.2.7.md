@@ -53,9 +53,10 @@ They should not be reselected for the v0.2.7 controlled next step.
 
 ## Explicit Non-Authorization
 
-This decision does not authorize:
+This selection record did not itself authorize abstraction. The later v0.2.7 pre-abstraction human review decision authorizes limited educational abstraction of `CAND-010` and `CAND-016` only.
 
-- creating abstractions for `CAND-010` or `CAND-016`;
+This decision and the pre-abstraction review decision do not authorize:
+
 - coding `CAND-010` or `CAND-016`;
 - opening the remaining 8 candidates as a full batch;
 - modifying `ABS-001.md` or `ABS-002.md`;
@@ -85,4 +86,5 @@ Research Note 002 remains prohibited until the controlled next step is completed
 - [Candidate comparison v0.2.7](candidate-comparison-v0.2.7.md)
 - [Safeguards checklist v0.2.7](safeguards-checklist-v0.2.7.md)
 - [Pre-abstraction gate v0.2.7](pre-abstraction-gate-v0.2.7.md)
+- [Pre-abstraction human review decision v0.2.7](pre-abstraction-human-review-decision-v0.2.7.md)
 - [GitHub issue draft v0.2.7](github-issue-draft-v0.2.7.md)

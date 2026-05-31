@@ -1,6 +1,6 @@
 # Dataset v0.2.7 Pre-Abstraction Gate
 
-Gate status: `closed pending pre-abstraction review`
+Gate status: `open for limited abstraction of CAND-010 and CAND-016 only`
 
 This gate controls whether the two selected v0.2.7 candidates may move from selection into limited educational abstraction.
 
@@ -15,9 +15,9 @@ This gate applies only to these 2 candidates. It does not open the remaining can
 
 ## Current Status
 
-The v0.2.7 step is selection and planning only.
+The v0.2.7 pre-abstraction human review decision has been recorded.
 
-No abstraction has begun. No coding has begun. No source case text has been inspected, copied, quoted, or scraped. No patient-identifying information has been added. No clinical guidance has been created.
+Limited educational abstraction is authorized only for `CAND-010` and `CAND-016`. No abstraction has begun in this decision-record step. No coding has begun. No source case text has been inspected, copied, quoted, or scraped. No patient-identifying information has been added. No clinical guidance has been created.
 
 ## Requirements Before Abstraction
 
@@ -32,20 +32,22 @@ Before either selected candidate may be abstracted, a reviewer should confirm:
 
 ## Gate Decision Options
 
-Choose one after review:
+Recorded decision:
 
-- [x] remain closed pending pre-abstraction review
+- [ ] remain closed pending pre-abstraction review
 - [ ] open for limited abstraction of `CAND-010` only
 - [ ] open for limited abstraction of `CAND-016` only
-- [ ] open for limited abstraction of `CAND-010` and `CAND-016` only
+- [x] open for limited abstraction of `CAND-010` and `CAND-016` only
 - [ ] remain closed; revise selected candidates
 - [ ] remain closed; revise abstraction safeguards before proceeding
 
 ## Explicit Non-Authorization
 
+This gate authorizes limited educational abstraction of `CAND-010` and `CAND-016` only.
+
 This gate does not authorize:
 
-- abstracting any candidate before review;
+- abstracting any candidate other than `CAND-010` and `CAND-016`;
 - coding any candidate;
 - opening the remaining candidates as a full batch;
 - modifying `ABS-001.md` or `ABS-002.md`;
@@ -55,6 +57,10 @@ This gate does not authorize:
 - creating clinical guidance;
 - starting Research Note 002.
 
+## Decision Record
+
+See [pre-abstraction human review decision v0.2.7](pre-abstraction-human-review-decision-v0.2.7.md).
+
 ## Default Next Step
 
-The default next step is pre-abstraction human review of this v0.2.7 package.
+The default next step is limited educational abstraction of `CAND-010` and `CAND-016` only, followed by human review before any coding.

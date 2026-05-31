@@ -74,10 +74,11 @@ The dry-run abstractions are paraphrased educational artifacts only. They are no
 
 Dataset v0.2.7 selects exactly 2 additional candidates for the next controlled workflow step: `CAND-010` and `CAND-016`.
 
-This is selection and planning only. No new abstractions have been created, no coding has been performed, the full remaining batch is not open, and Research Note 002 remains prohibited.
+The pre-abstraction human review decision authorizes limited educational abstraction of `CAND-010` and `CAND-016` only. No abstraction has been created in the decision-record step, no coding has been performed, the full remaining batch is not open, and Research Note 002 remains prohibited.
 
 - [Controlled next-step selection v0.2.7](controlled-next-step-selection-v0.2.7.md)
 - [Candidate comparison v0.2.7](candidate-comparison-v0.2.7.md)
 - [Safeguards checklist v0.2.7](safeguards-checklist-v0.2.7.md)
 - [Pre-abstraction gate v0.2.7](pre-abstraction-gate-v0.2.7.md)
+- [Pre-abstraction human review decision v0.2.7](pre-abstraction-human-review-decision-v0.2.7.md)
 - [GitHub issue draft v0.2.7](github-issue-draft-v0.2.7.md)
